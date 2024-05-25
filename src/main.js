@@ -7,18 +7,18 @@ import insta from '/instagram.png'
 document.querySelector('#app').innerHTML = `
   <div>
     <header>
-      <img src=${logo} alt="GTBサービスのロゴ" />
+      <a href="#"><img src=${logo} alt="GTBサービスのロゴ" /></a>
       <nav>
         <li><a href="">私たちについて</a></li>
         <li><a href="">事業案内</a></li>
         <li><a href="">アクセス</a></li>
         <li><a href="">施工実績</a></li>
-        <li><a href="">お問い合わせ</a></li>
+        <li class="contact"><a href="">お問い合わせ</a></li>
         <li><a href=""><img src=${insta} art="Instagramアイコン"></a></li>
       </nav>
     </header>
     <main>
-      <img src="${mainvisual}" alt="メインビジュアルバナナフィガロの写真">
+      <img src=${mainvisual} alt="GTBサービスのロゴ" />
       <div>
         <h1>あなただけの１台で、カーライフをもっと楽しく。</h1>
         <p>Just For One Enjoy Car Life!</p>

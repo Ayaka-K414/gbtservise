@@ -1,0 +1,38 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    height: 173px;
+    padding: 20px 62px 20px 44px;
+    img {
+        width: 242px;
+        height: 133px;
+    }
+    nav {
+        display: flex;
+        font-weight: 700;
+        font-size: 1.6rem;
+        padding-top: 20px;
+        li {
+            padding-right: 40px;
+            a {
+                // display: block;
+                img {
+                    width: 16px;
+                    height: 16px;
+                }
+            }
+            a:hover {
+                // display: block;
+                border-bottom: 3px solid #FEEF44;
+            }
+        }
+        .contact::before {
+            content: "|";
+            padding-right: 24px;
+        }
+        .contact::after {
+            content: "|";
+            padding-left: 24px;            
+        }
+    }
+}

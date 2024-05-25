@@ -1,2 +1,2 @@
-body{color:blue;list-style:none}
+html{font-family:"Noto Sans JP",sans-serif;font-size:62.5%;font-weight:400}body{list-style:none}a{text-decoration:none;color:inherit}header{display:flex;justify-content:space-between;height:173px;padding:20px 62px 20px 44px}header img{width:242px;height:133px}header nav{display:flex;font-weight:700;font-size:1.6rem;padding-top:20px}header nav li{padding-right:40px}header nav li a img{width:16px;height:16px}header nav li a:hover{border-bottom:3px solid #feef44}header nav .contact::before{content:"|";padding-right:24px}header nav .contact::after{content:"|";padding-left:24px}
 /*# sourceMappingURL=style.min.css.map */
