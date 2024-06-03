@@ -19,6 +19,11 @@ header {
   height: 173px;
   padding: 20px 62px 20px 44px;
 }
+@media screen and (max-width: 1024px) {
+  header {
+    padding: 20px 17px 20px 16px;
+  }
+}
 header img {
   width: 242px;
   height: 133px;
@@ -46,5 +51,30 @@ header nav .contact::before {
 header nav .contact::after {
   content: "|";
   padding-left: 24px;
+}
+header nav .insta {
+  padding-right: 0;
+}
+@media screen and (max-width: 1024px) {
+  header nav .insta {
+    padding-right: 0;
+  }
+}
+@media screen and (max-width: 768px) {
+  header nav {
+    display: none;
+  }
+}
+header .hamburger {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  header .hamburger {
+    display: block;
+  }
+  header .hamburger img {
+    width: 48px;
+    height: 48px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

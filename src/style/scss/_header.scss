@@ -1,8 +1,13 @@
+@use '../scss/mixin' as *;
+
 header {
     display: flex;
     justify-content: space-between;
     height: 173px;
     padding: 20px 62px 20px 44px;
+    @include pcs {
+        padding: 20px 17px 20px 16px;
+    }
     img {
         width: 242px;
         height: 133px;
@@ -15,14 +20,12 @@ header {
         li {
             padding-right: 40px;
             a {
-                // display: block;
                 img {
                     width: 16px;
                     height: 16px;
                 }
             }
             a:hover {
-                // display: block;
                 border-bottom: 3px solid #FEEF44;
             }
         }
@@ -33,6 +36,25 @@ header {
         .contact::after {
             content: "|";
             padding-left: 24px;            
+        }
+        .insta {
+            padding-right: 0;
+            @include pcs {
+                padding-right: 0;
+            }
+        }
+        @include tablet {
+            display: none;
+        }
+    }
+    .hamburger {
+        display: none;
+        @include tablet {
+            display: block;
+                img {
+                width: 48px;
+                height: 48px;
+            }
         }
     }
 }
