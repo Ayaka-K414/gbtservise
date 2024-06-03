@@ -3,6 +3,7 @@ import '../src/style/css/style.css'
 import logo from '/logo.png'
 import mainvisual from '/954x577.png'
 import insta from '/instagram.png'
+import hamburger from '/hamburger-button.png'
 
 document.querySelector('#app').innerHTML = `
   <div>
@@ -14,8 +15,11 @@ document.querySelector('#app').innerHTML = `
         <li><a href="">アクセス</a></li>
         <li><a href="">施工実績</a></li>
         <li class="contact"><a href="">お問い合わせ</a></li>
-        <li><a href=""><img src=${insta} art="Instagramアイコン"></a></li>
+        <li class="insta"><a href=""><img src=${insta} art="Instagramアイコン"></a></li>
       </nav>
+      <button class="hamburger">
+        <img src="${hamburger}" alt="ハンバーアイコン" />
+      </button>
     </header>
     <main>
       <img src=${mainvisual} alt="GTBサービスのロゴ" />
@@ -35,5 +39,3 @@ document.querySelector('#app').innerHTML = `
     </footer>
   </div>
 `
-
-setupCounter(document.querySelector('#counter'))
