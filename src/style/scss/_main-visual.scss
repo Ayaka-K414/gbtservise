@@ -1,0 +1,55 @@
+@use '../scss/mixin' as *;
+
+.main-visual {
+    display: flex;
+    padding: 0 70px 36px 70px;
+    img {
+        width: 75%;
+        @include pcs {
+            max-width: 672px;
+        }
+        @include tablet {
+            width: 100%;
+            padding:0 16px 16px 16px;
+        }
+    }
+    div {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;        
+        h1 {
+            color: #fff;
+            text-shadow: 1px 1px 0 #000,-1px 1px 0 #000,-1px -1px 0 #000,1px -1px 0 #000;    
+            font-weight: 700;
+            font-size: 5rem;
+            line-height: 68px;
+            min-width: 300px;
+            padding: 71px 0 50px 20px;
+            @include tablet {
+                padding: 0 0 27px 26px;
+                font-size: 4rem;
+                line-height: 54px;
+            }
+            span::after {
+                content: "\A";
+                white-space: pre;
+            }
+        }
+        p {
+            font-size: 4rem;
+            font-weight: 500;
+            line-height: 48px;
+            border: solid 1px #000;
+            border-radius: 35px;
+            background-color: #AAF2D1;
+            text-align: center;
+            min-width: 326px;
+            margin: 0 0 0 20px;
+            padding: 16px 18px;
+            span::after {
+                content: "\A";
+                white-space: pre;
+            }
+        }  
+    }
+}
