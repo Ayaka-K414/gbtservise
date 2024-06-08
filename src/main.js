@@ -22,10 +22,12 @@ document.querySelector('#app').innerHTML = `
       </button>
     </header>
     <main>
-      <img src=${mainvisual} alt="GTBサービスのロゴ" />
-      <div>
-        <h1>あなただけの１台で、カーライフをもっと楽しく。</h1>
-        <p>Just For One Enjoy Car Life!</p>
+      <div class="main-visual">
+        <img src=${mainvisual} alt="メインビジュアル" />
+        <div>
+          <h1><span>あなただけの</span>１台で、<br><span>カーライフを</span><span>もっと</span>楽しく。</h1>
+          <p><span>Just For One </span>Enjoy Car Life!</p>
+        </div>
       </div>
       <section>
         <h2>About us</h2>
