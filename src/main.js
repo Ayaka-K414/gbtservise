@@ -8,7 +8,7 @@ import hamburger from '/hamburger-button.png'
 document.querySelector('#app').innerHTML = `
   <div>
     <header>
-      <a href="#"><img src=${logo} alt="GTBサービスのロゴ" /></a>
+      <a href="#"><img class="logo" src=${logo} alt="GTBサービスのロゴ" /></a>
       <nav>
         <li><a href="">私たちについて</a></li>
         <li><a href="">事業案内</a></li>
@@ -26,10 +26,10 @@ document.querySelector('#app').innerHTML = `
         <img src=${mainvisual} alt="メインビジュアル" />
         <div>
           <h1><span>あなただけの</span>１台で、<br><span>カーライフを</span><span>もっと</span>楽しく。</h1>
-          <p><span>Just For One </span>Enjoy Car Life!</p>
+          <p><span pan>Just For One </span>Enjoy Car Life!</p>
         </div>
       </div>
-      <section>
+      <section class="about-us">
         <h2>About us</h2>
         <p>・私たちについて・</p>
         <p>自動車販売、新車から中古車やカスタムカーなど様々な種類を取り扱いしており、お客様の満足のいくお車をお探しいたします。 自社で鈑金塗装修理をしておりますので購入してからのアフターケアもお任せください。 また、鈑金、塗装、車検、修理や、今お乗りのお車を自分好みの色にカスタムしたいなど車のことなら何でもご相談してください。</p>
