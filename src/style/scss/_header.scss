@@ -1,4 +1,5 @@
 @use '../scss/mixin' as *;
+@use '../scss/variable' as *;
 
 header {
     display: flex;
@@ -7,21 +8,21 @@ header {
     padding: 20px 62px 20px 44px;
     @include pcs {
         height: 133px;
-        padding: 20px 16px 20px 16px;
-    }
-    @include tablet {
-        height: 133px;
         padding: 20px 25px 20px 25px;
     }
-    @include sp {
+    @include tablet {
         height: 82px;
         padding: 20px 18px 10px 18px;
         align-items: center;
     }
-    img {
+    .logo {
         width: 242px;
         height: 133px;
-        @include sp {
+        @include pcs {
+            width: 170px;
+            height: 93px;
+        }
+        @include tablet {
             width: 96px;
             height: 52px;
         }
@@ -31,6 +32,9 @@ header {
         font-weight: 700;
         font-size: 1.6rem;
         padding-top: 20px;
+        @include pcs {
+            display: none;
+        }
         li {
             padding-right: 40px;
             a {
@@ -40,30 +44,24 @@ header {
                 }
             }
             a:hover {
-                border-bottom: 3px solid #FEEF44;
+                border-bottom: 3px solid $color--yellow;
             }
         }
         .contact::before {
             content: "|";
-            padding-right: 24px;
+            padding-right: 20px;
         }
         .contact::after {
             content: "|";
-            padding-left: 24px;            
+            padding-left: 20px;            
         }
         .insta {
             padding-right: 0;
-            @include pcs {
-                padding-right: 0;
-            }
-        }
-        @include tablet {
-            display: none;
         }
     }
     .hamburger {
         display: none;
-        @include tablet {
+        @include pcs {
             display: block;
                 img {
                 width: 48px;
