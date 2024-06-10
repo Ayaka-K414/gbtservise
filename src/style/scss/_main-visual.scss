@@ -1,38 +1,62 @@
 @use '../scss/mixin' as *;
+@use '../scss/variable' as *;
 
 .main-visual {
     display: flex;
-    padding: 0 70px 36px 70px;
+    justify-content: center;
+    padding: 0 4.8% 36px 4.8%;
+    @include pcs {
+        display: block;
+        padding: 0px 16px;
+    }
+    @include tablet {
+        padding: 0 5px 8px 5px;
+    }
     img {
-        width: 75%;
+        max-width: 68%;
         @include pcs {
-            max-width: 672px;
+            display: inline;
+            max-width: 100%;
+            margin: 0 auto;
         }
         @include tablet {
-            width: 100%;
-            padding:0 16px 16px 16px;
+            // max-height: 320px;
+            margin: 0 auto;
         }
     }
     div {
         display: flex;
         flex-direction: column;
-        justify-content: space-between;        
+        justify-content: space-between;
+        min-width: 332px;
+        @include pcs {
+            display: block;
+        }
         h1 {
-            color: #fff;
+            color: $color--white;
             text-shadow: 1px 1px 0 #000,-1px 1px 0 #000,-1px -1px 0 #000,1px -1px 0 #000;    
             font-weight: 700;
             font-size: 5rem;
             line-height: 68px;
-            min-width: 300px;
-            padding: 71px 0 50px 20px;
-            @include tablet {
-                padding: 0 0 27px 26px;
+            margin: 71px 0 50px 20px;
+            @include pcs {
+                margin: 0;
                 font-size: 4rem;
                 line-height: 54px;
+                padding-bottom: 27px;
+            }
+            @include tablet {
+                padding: 8px 0 14px 8px;
+                font-size: 2.4rem;
+                line-height: 32px;
             }
             span::after {
                 content: "\A";
                 white-space: pre;
+                @include pcs {
+                    content: "";
+                    white-space: none;
+                }
             }
         }
         p {
@@ -41,15 +65,35 @@
             line-height: 48px;
             border: solid 1px #000;
             border-radius: 35px;
-            background-color: #AAF2D1;
+            background-color: $color--green;
             text-align: center;
-            min-width: 326px;
-            margin: 0 0 0 20px;
-            padding: 16px 18px;
+            margin-left:20px;
+            padding: 10px;
+            @include pcs {
+                width: 480px;
+                height: 50px;
+                margin: 0 0 0 auto;
+                padding: 0;
+                font-size: 3.2rem;
+                line-height: 46px;
+                border-radius: 8px;
+                position: relative;
+                z-index: 1;
+            }
+            @include tablet {
+                width: 262px;
+                height: 32px;
+                font-size: 1.8rem;
+                line-height: 26px;
+            }
             span::after {
                 content: "\A";
                 white-space: pre;
+                @include pcs {
+                    content: "";
+                    white-space: none;
+                }
             }
-        }  
+        }      
     }
 }
