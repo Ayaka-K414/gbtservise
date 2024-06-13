@@ -1,5 +1,122 @@
+@use '../scss/mixin' as *;
+@use '../scss/variable' as *;
+
 .about-us {
     background-color: #FAF2EB;
-    padding-top: 115px;
-    margin-top: -22px;
+    @include pcs {
+        padding-top: 115px;
+        margin-top: -22px;
+    }
+    .about-us-container {
+        display: flex;
+        padding: 142px 0 29px 11%;
+        overflow: hidden;
+        div {
+            padding-right: 40px;
+            .section-title {
+                padding-bottom: 24px;
+                font-size: 100px;
+                font-weight: 700;
+                line-height: 86px;
+                color: $color--white;
+                text-shadow: 1px 1px 0 #000,-1.5px 1.5px 0 #000,-1px -1px 0 #000,1px -1px 0 #000;
+                @include pcs {
+                    text-shadow: 1px 1px 0 #000,-1px 1px 0 #000,-1px -1px 0 #000,1px -1px 0 #000;
+                }
+            }
+            .section-subtitle {
+                padding-bottom: 20px;
+                font-size: 26px;
+                font-weight: 500;
+                line-height: 37px;
+            }
+            .about-us-text {
+                width: 479px;
+                height: 390px;
+                font-size: 1.6rem;
+                line-height: 24px;
+                background-color: $color--white;
+                padding: 40px 56px 36px 56px;
+                border: 1px solid #000;
+                border-radius: 20px;
+                p {
+                    padding-bottom: 50px;
+                }
+                .about-us-link {
+                    .text {
+                        display: inline-block;
+                        font-weight: 500;
+                        line-height: 23px;
+                        text-align: center;
+                        box-shadow: 0px 2px 0px 0px #FEEF44;
+                        margin-right: 20px;
+                        padding: 4px;
+                    }
+                    .arrow {
+                        display: inline-block;
+                        width: 60px;
+                        height: 60px;
+                        border-radius: 50%;
+                        border: 2px solid $color--yellow;
+                        text-align: center;
+                        line-height: 60px;
+                        font-size: 2rem;    
+                    }
+                }
+                .about-us-link:hover .text {
+                    text-shadow: 2px 2px 0px 0px #FEEF44;  //<------ここがうまくいかない（検証ツールで無効なプロパティになる）
+                    border-bottom: 1px solid #000;
+                    transition: all 0.3s;
+                }
+                .about-us-link:hover .arrow {
+                    background-color: $color--yellow;
+                    border: 1px solid #000;
+                    transition: all 0.3s;
+                }
+            }
+        }
+        img {
+            width: 994px;
+            height: 624px;
+            border-radius: 50%;
+        }
+    }
+    .feature {
+        width: 57%;
+        margin: 0 auto;
+        .feature-title {
+            font-size: 30px;
+            font-weight: 700;
+            line-height: 43px;
+            color: #F4F4F4;
+            text-shadow: 1px 1px 0 #000,-1px 1px 0 #000,-1px -1px 0 #000,1px -1px 0 #000,1.8px 1.8px 0 $color--yellow;
+        }
+        .feature-link {
+            display: block;
+            font-size: 1.6rem;
+            font-weight: 500;
+            line-height: 23px;
+            text-align: center;
+            background-color: $color--white;
+            border: 2px solid $color--yellow;
+            border-radius: 20px;
+            box-shadow: 3px 3px 0px 0px #B6AAA0;   
+            padding: 10px 0;
+            span::before {
+                content: ">>";
+                margin-right: 16px;
+                margin-left: 32px;
+                height: 30px;
+            }
+            span::after {
+                content: "";display: inline-block;
+                width: 18px;
+                height: 18px;
+                background-image: url("../../public/new-window-icon.png");
+                background-size: contain;
+                vertical-align: middle;
+                margin-left: 16px;
+            }
+        }
+    }
 }
