@@ -9,6 +9,10 @@ body {
   list-style: none;
 }
 
+ul {
+  list-style: none;
+}
+
 a {
   text-decoration: none;
   color: inherit;
@@ -218,7 +222,6 @@ header .hamburger {
 }
 @media screen and (max-width: 1024px) {
   .about-us {
-    padding-top: 115px;
     margin-top: -22px;
   }
 }
@@ -227,20 +230,39 @@ header .hamburger {
   padding: 142px 0 29px 11%;
   overflow: hidden;
 }
+@media screen and (max-width: 1024px) {
+  .about-us .about-us-container {
+    padding: 119px 32px 29px 32px;
+  }
+}
 .about-us .about-us-container div {
   padding-right: 40px;
 }
+@media screen and (max-width: 1024px) {
+  .about-us .about-us-container div {
+    padding-right: 0;
+  }
+}
 .about-us .about-us-container div .section-title {
   padding-bottom: 24px;
-  font-size: 100px;
+  font-size: 10rem;
   font-weight: 700;
   line-height: 86px;
   color: #FFFFFF;
-  text-shadow: 1px 1px 0 #000, -1.5px 1.5px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000;
+  text-shadow: 2px 2px 0 #000, -2px 2px 0 #000, -2px -2px 0 #000, 2px -2px 0 #000;
 }
 @media screen and (max-width: 1024px) {
   .about-us .about-us-container div .section-title {
+    padding-bottom: 8px;
+    font-size: 7rem;
+    line-height: 70px;
     text-shadow: 1px 1px 0 #000, -1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000;
+  }
+}
+@media screen and (max-width: 768px) {
+  .about-us .about-us-container div .section-title {
+    font-size: 4rem;
+    line-height: 40px;
   }
 }
 .about-us .about-us-container div .section-subtitle {
@@ -248,6 +270,12 @@ header .hamburger {
   font-size: 26px;
   font-weight: 500;
   line-height: 37px;
+}
+@media screen and (max-width: 1024px) {
+  .about-us .about-us-container div .section-subtitle {
+    font-size: 20px;
+    line-height: 28px;
+  }
 }
 .about-us .about-us-container div .about-us-text {
   width: 479px;
@@ -259,19 +287,42 @@ header .hamburger {
   border: 1px solid #000;
   border-radius: 20px;
 }
+@media screen and (max-width: 1024px) {
+  .about-us .about-us-container div .about-us-text {
+    background-color: #FAF2EB;
+    border: none;
+    width: auto;
+    height: auto;
+    padding: 20px 0;
+    font-weight: 400;
+  }
+}
 .about-us .about-us-container div .about-us-text p {
   padding-bottom: 50px;
 }
-.about-us .about-us-container div .about-us-text .about-us-link .text {
+@media screen and (max-width: 1024px) {
+  .about-us .about-us-container div .about-us-text p {
+    padding-bottom: 20px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .about-us .about-us-container div .about-us-text .about-us-link-container {
+    text-align: right;
+  }
+}
+.about-us .about-us-container div .about-us-text .about-us-link-container .about-us-link {
+  display: inline-block;
+}
+.about-us .about-us-container div .about-us-text .about-us-link-container .about-us-link .text {
   display: inline-block;
   font-weight: 500;
   line-height: 23px;
   text-align: center;
   box-shadow: 0px 2px 0px 0px #FEEF44;
   margin-right: 20px;
-  padding: 4px;
+  padding: 22px 0 0 0;
 }
-.about-us .about-us-container div .about-us-text .about-us-link .arrow {
+.about-us .about-us-container div .about-us-text .about-us-link-container .about-us-link .arrow {
   display: inline-block;
   width: 60px;
   height: 60px;
@@ -281,24 +332,50 @@ header .hamburger {
   line-height: 60px;
   font-size: 2rem;
 }
-.about-us .about-us-container div .about-us-text .about-us-link:hover .text {
-  text-shadow: 2px 2px 0px 0px #FEEF44;
+.about-us .about-us-container div .about-us-text .about-us-link-container .about-us-link:hover .text {
+  text-shadow: 2px 2px #FEEF44;
   border-bottom: 1px solid #000;
-  transition: all 0.3s;
+  transition: all 0.3s ease-out;
 }
-.about-us .about-us-container div .about-us-text .about-us-link:hover .arrow {
+.about-us .about-us-container div .about-us-text .about-us-link-container .about-us-link:hover .arrow {
   background-color: #FEEF44;
   border: 1px solid #000;
-  transition: all 0.3s;
+  transition: all 0.3s ease-out;
 }
-.about-us .about-us-container img {
+.about-us .about-us-container .about-us-img-pc {
   width: 994px;
   height: 624px;
   border-radius: 50%;
 }
+@media screen and (max-width: 1024px) {
+  .about-us .about-us-container .about-us-img-pc {
+    display: none;
+  }
+}
+.about-us .about-us-container .about-us-img-tab {
+  display: none;
+}
+@media screen and (max-width: 1024px) {
+  .about-us .about-us-container .about-us-img-tab {
+    display: block;
+    width: 80vw;
+    height: auto;
+    border: 1px solid #000;
+    border-radius: 50%;
+    margin-left: 30%;
+    margin-top: -100px;
+  }
+}
 .about-us .feature {
   width: 57%;
   margin: 0 auto;
+  min-width: 820px;
+  padding-bottom: 5px;
+}
+@media screen and (max-width: 1024px) {
+  .about-us .feature {
+    min-width: 680px;
+  }
 }
 .about-us .feature .feature-title {
   font-size: 30px;
@@ -318,6 +395,18 @@ header .hamburger {
   border-radius: 20px;
   box-shadow: 3px 3px 0px 0px #B6AAA0;
   padding: 10px 0;
+}
+.about-us .feature .feature-link:hover {
+  border: 1px solid #000;
+  background-color: #FEEF44;
+  box-shadow: none;
+  transition: all 0.3s ease-out;
+}
+@media screen and (max-width: 1024px) {
+  .about-us .feature .feature-link {
+    font-size: 1.4rem;
+    border-radius: 8px;
+  }
 }
 .about-us .feature .feature-link span::before {
   content: ">>";
@@ -340,9 +429,12 @@ header .hamburger {
   background-image: url("../../public/TOPページ（bp_PC1024）-1.jpg");
   background-position: center;
   background-size: cover;
-  background-color: #AAF2D1;
 }
-.service .section-title {
+.service .service-container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.service .service-container .section-title {
   padding-top: 180px;
   padding-bottom: 24px;
   padding-left: 11%;
@@ -350,14 +442,14 @@ header .hamburger {
   font-weight: 700;
   line-height: 86px;
   color: #FFFFFF;
-  text-shadow: 1px 1px 0 #000, -1.5px 1.5px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000;
+  text-shadow: 2px 2px 0 #000, -2px 2px 0 #000, -2px -2px 0 #000, 2px -2px 0 #000;
 }
 @media screen and (max-width: 1024px) {
-  .service .section-title {
+  .service .service-container .section-title {
     text-shadow: 1px 1px 0 #000, -1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000;
   }
 }
-.service .section-subtitle {
+.service .service-container .section-subtitle {
   padding-bottom: 20px;
   padding-left: 11%;
   font-size: 26px;
@@ -384,9 +476,15 @@ header .hamburger {
 .service .card-container figure {
   width: 280px;
   height: 400px;
+  text-align: center;
   border-radius: 20px;
   border: 1px solid #000;
   margin-right: 16px;
+  background-color: #FFFFFF;
+}
+.service .card-container figure:hover {
+  background-color: #FEEF44;
+  transition: all 0.3s ease-out;
 }
 .service .card-container figure:last-of-type {
   margin-right: 0;
@@ -395,11 +493,325 @@ header .hamburger {
   width: 100%;
   height: 330px;
   border-radius: 20px 20px 0 0;
-  border: 1px solid #000;
+  border-bottom: 1px solid #000;
 }
 .service .card-container figure figcaption {
-  width: 100%;
-  height: 100%;
+  display: inline-block;
+  font-size: 2.4rem;
+  font-weight: 400;
+  line-height: 50px;
+  border-bottom: 3px solid #FEEF44;
+  margin: auto;
+}
+
+.works {
+  background-color: #EAF9F2;
+  padding-bottom: 70px;
+  padding-top: 180px;
+}
+.works .flex-container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 10%;
+}
+.works .flex-container .section-title-container .section-title {
+  padding-bottom: 24px;
+  font-size: 100px;
+  font-weight: 700;
+  line-height: 86px;
+  color: #FFFFFF;
+  text-shadow: 2px 2px 0 #000, -2px 2px 0 #000, -2px -2px 0 #000, 2px -2px 0 #000;
+}
+@media screen and (max-width: 1024px) {
+  .works .flex-container .section-title-container .section-title {
+    text-shadow: 1px 1px 0 #000, -1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000;
+  }
+}
+.works .flex-container .section-title-container .section-subtitle {
+  padding-bottom: 20px;
+  font-size: 26px;
+  font-weight: 500;
+  line-height: 37px;
+}
+.works .flex-container .works-link-container {
+  margin-top: auto;
+}
+.works .flex-container .works-link-container .works-link {
+  display: inline-block;
+}
+.works .flex-container .works-link-container .works-link .text {
+  display: inline-block;
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 23px;
+  text-align: center;
+  box-shadow: 0px 2px 0px 0px #FEEF44;
+  margin-right: 20px;
+  padding: 22px 0 0 0;
+}
+.works .flex-container .works-link-container .works-link .arrow {
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 2px solid #FEEF44;
+  text-align: center;
+  line-height: 60px;
+  font-size: 2rem;
+}
+.works .flex-container .works-link-container .works-link:hover .text {
+  text-shadow: 2px 2px #FEEF44;
+  border-bottom: 1px solid #000;
+  transition: all 0.3s ease-out;
+}
+.works .flex-container .works-link-container .works-link:hover .arrow {
+  background-color: #FEEF44;
+  border: 1px solid #000;
+  transition: all 0.3s ease-out;
+}
+.works .card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding-top: 40px;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+@media screen and (max-width: 1024px) {
+  .works .card-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 640px;
+    width: 90%;
+    height: auto;
+  }
+}
+.works .card-container figure {
+  width: 350px;
+  height: 466px;
+  border-radius: 20px;
+  border: 1px solid #000;
+  margin-right: 40px;
+  margin-bottom: 32px;
   background-color: #FFFFFF;
+}
+.works .card-container figure:hover {
+  background-color: #FEEF44;
+  transition: all 0.3s ease-out;
+}
+.works .card-container figure:nth-of-type(3n) {
+  margin-right: 0;
+}
+.works .card-container figure img {
+  width: 100%;
+  height: 330px;
+  border-radius: 20px 20px 0 0;
+  border-bottom: 1px solid #000;
+}
+.works .card-container figure figcaption {
+  padding: 14px 12px;
+}
+.works .card-container figure figcaption .card-title {
+  display: inline-block;
+  background-color: #AAF2D1;
+  font-size: 1.6rem;
+  line-height: 23px;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+.works .card-container figure figcaption .card-text {
+  font-size: 1.6rem;
+  line-height: 23px;
+}
+
+.instagram {
+  background-image: url("../../public/top-insta-high1440.png");
+  background-position: center;
+  background-size: cover;
+}
+.instagram .section-title {
+  padding-top: 180px;
+  font-size: 10rem;
+  font-weight: 700;
+  line-height: 86px;
+  color: #FFFFFF;
+  text-shadow: 2px 2px 0 #000, -2px 2px 0 #000, -2px -2px 0 #000, 2px -2px 0 #000, 5px 5px 0 #AAF2D1;
+  text-align: center;
+}
+.instagram .instagram-link-container {
+  display: flex;
+  justify-content: flex-end;
+  margin: 30px 160px 30px 0;
+}
+.instagram .instagram-link-container .instagram-link {
+  display: inline-block;
+  padding: 5px 0;
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 23px;
+  text-align: left;
+  border-bottom: 3px solid #FEEF44;
+}
+.instagram .instagram-link-container .instagram-link a span::before {
+  content: "";
+  display: inline-block;
+  width: 36px;
+  height: 5px;
+  background-image: url("../../public/follow-us-arrow.png");
+  background-size: contain;
+  vertical-align: middle;
+  margin-left: 16px;
+}
+.instagram .instagram-link-container .instagram-link a span::after {
+  content: "";
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  background-image: url("../../public/instagram.png");
+  background-size: contain;
+  vertical-align: middle;
+  margin-left: 16px;
+}
+.instagram .insta-img-container {
+  text-align: center;
+}
+.instagram .insta-background-bottom {
+  background-image: url("../../public/top-insta-bottom1440.png");
+  width: 100%;
+  height: 180px;
+  background-color: #EAF9F2;
+}
+
+footer .footer-high {
+  padding: 30px 0;
+  border-bottom: 2px solid #000;
+}
+footer .footer-high-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer .footer-high-links li a .list-title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  line-height: 31px;
+  text-align: center;
+  border-bottom: 2px solid #FEEF44;
+  padding: 4px 0;
+  margin: 0 20px;
+}
+footer .footer-high-links li a .text {
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 23px;
+  text-align: center;
+  padding: 4px 0;
+}
+footer .footer-high-links li a .text::after {
+  content: "";
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  background-image: url("../../public/new-window-icon.png");
+  background-size: contain;
+  vertical-align: middle;
+  margin-left: 16px;
+}
+footer .footer-high-links li:first-of-type {
+  width: 360px;
+  height: 78px;
+  border-radius: 20px 0px 0px 20px;
+  border: 1px solid #000;
+}
+footer .footer-high-links li:last-of-type {
+  width: 360px;
+  height: 78px;
+  border-radius: 0px 20px 20px 0px;
+  border: 1px solid #000;
+  border-left: none;
+}
+footer .footer-low {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 10%;
+}
+footer .footer-low .footer-flex-left address .address {
+  font-style: normal;
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 23px;
+  text-align: center;
+  padding: 25px 0;
+}
+footer .footer-low .footer-flex-left address .address span::before {
+  content: "";
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  background-image: url("../../public/tel-icon.png");
+  background-size: contain;
+  vertical-align: middle;
+  margin-right: 4px;
+}
+footer .footer-low-links {
+  display: flex;
+  justify-content: space-around;
+  width: 50vw;
+  padding: 50px 0;
+}
+footer .footer-low-links li a {
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 23px;
+  padding: 6px 0;
+}
+footer .footer-low .instagram-link-container {
+  display: flex;
+  justify-content: flex-end;
+  margin: 30px 0;
+}
+footer .footer-low .instagram-link-container .instagram-link {
+  display: inline-block;
+  padding: 5px 0;
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 23px;
+  text-align: left;
+  border-bottom: 3px solid #FEEF44;
+}
+footer .footer-low .instagram-link-container .instagram-link a span::before {
+  content: "";
+  display: inline-block;
+  width: 36px;
+  height: 5px;
+  background-image: url("../../public/follow-us-arrow.png");
+  background-size: contain;
+  vertical-align: middle;
+  margin-left: 16px;
+}
+footer .footer-low .instagram-link-container .instagram-link a span::after {
+  content: "";
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  background-image: url("../../public/instagram.png");
+  background-size: contain;
+  vertical-align: middle;
+  margin-left: 16px;
+}
+footer .copyright {
+  height: 52px;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 52px;
+  color: #FFFFFF;
+  background-color: #000;
+  text-align: center;
 }
 /*# sourceMappingURL=style.css.map */

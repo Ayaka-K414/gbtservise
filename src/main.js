@@ -6,6 +6,7 @@ import insta from '/instagram.png';
 import hamburger from '/hamburger-button.png';
 import service from '/service.jpeg';
 import aboutus from '/aboutus.jpeg';
+import instaImage from '/rectangle20.png';
 
 document.querySelector('#app').innerHTML = `
   <div>
@@ -36,15 +37,18 @@ document.querySelector('#app').innerHTML = `
           <div>
             <h2 class="section-title">About us</h2>
             <p class="section-subtitle">・私たちについて・</p>
+            <img class="about-us-img-tab" src=${aboutus} alt="会社案内" />
             <div class="about-us-text">
               <p>自動車販売、新車から中古車やカスタムカーなど様々な種類を取り扱いしており、お客様の満足のいくお車をお探しいたします。 <br>自社で鈑金塗装修理をしておりますので購入してからのアフターケアもお任せください。 <br>また、鈑金、塗装、車検、修理や、今お乗りのお車を自分好みの色にカスタムしたいなど車のことなら何でもご相談してください。</p>
-              <a class="about-us-link" href="">
-                <p class="text">会社案内</p>
-                <p class="arrow">→</p>
-              </a>
+              <div class="about-us-link-container">
+                <a class="about-us-link" href="">
+                  <p class="text">会社案内</p>
+                  <p class="arrow">→</p>
+                </a>
+              </div>
             </div>
           </div>
-          <img src=${aboutus} alt="私たちについて" />
+          <img class="about-us-img-pc" src=${aboutus} alt="私たちについて" />
         </div>
         <div class="feature">
           <h3 class="feature-title">Feature</h3>
@@ -52,30 +56,173 @@ document.querySelector('#app').innerHTML = `
         </div>
       </section>
       <section class="service">
-        <h2 class="section-title">Service</h2>
-        <p class="section-subtitle">・事業内容・</p>
+        <div class="service-container">
+          <h2 class="section-title">Service</h2>
+          <p class="section-subtitle">・事業内容・</p>
+        </div>
         <div class="card-container">
           <figure>
-            <img src=${service} alt="鈑金・塗装" />
-            <figcaption>鈑金・塗装</figcaption>
+            <a href="">
+              <img src=${service} alt="鈑金・塗装" />
+              <figcaption>鈑金・塗装</figcaption>
+            </a>
           </figure>
           <figure>
-            <img src=${service} alt="整備・車検" />
-            <figcaption>整備・車検</figcaption>
+            <a href="">
+              <img src=${service} alt="整備・車検" />
+              <figcaption>整備・車検</figcaption>
+            </a>
           </figure>
           <figure>
-            <img src=${service} alt="新車・中古車販売" />
-            <figcaption>新車・中古車販売</figcaption>
+            <a href="">
+              <img src=${service} alt="新車・中古車販売" />
+              <figcaption>新車・中古車販売</figcaption>
+            </a>
           </figure>
           <figure>
-            <img src=${service} alt="カスタムペイント" />
-            <figcaption>カスタムペイント</figcaption>
+            <a href="">
+              <img src=${service} alt="カスタムペイント" />
+              <figcaption>カスタムペイント</figcaption>
+            </a>
           </figure>
         </div>
       </section>
+      <section class="works">
+        <div class="flex-container">
+          <div class="section-title-container">
+            <h2 class="section-title">Works</h2>
+            <p class="section-subtitle">・施工実績・</p>
+          </div>
+          <div class="works-link-container">
+            <a class="works-link" href="">
+              <p class="text">もっと見る</p>
+              <p class="arrow">→</p>
+            </a>
+          </div>
+        </div>
+        <div class="card-container">
+          <figure>
+            <a href="">
+              <img src=${service} alt="鈑金・塗装" />
+              <figcaption>
+                <p class="card-title">カスタムペイント</p>
+                <p class="card-text">アウディA7 側面キズ、凹みの修理 鈑金、塗装で元通りの仕上がりに。</p>
+              </figcaption>
+            </a>
+          </figure>
+          <figure>
+            <a href="">
+              <img src=${service} alt="整備・車検" />
+              <figcaption>
+                <p class="card-title">カスタムペイント</p>
+                <p class="card-text">ジムニー オールペンおしゃれ仕様にカスタム。</p>
+              </figcaption>
+            </a>
+          </figure>
+          <figure>
+            <a href="">
+              <img src=${service} alt="新車・中古車販売" />
+              <figcaption>
+                <p class="card-title">カスタムペイント</p>
+                <p class="card-text">ハイエース オールペンブルー系のオリジナルカラー。</p>
+              </figcaption>
+            </a>
+          </figure>
+          <figure>
+            <a href="">
+              <img src=${service} alt="カスタムペイント" />
+              <figcaption>
+                <p class="card-title">カスタムペイント</p>
+                <p class="card-text">ミラジーノ オールペンブラウン×ホワイトでかわいらしく。</p>
+              </figcaption>
+            </a>
+          </figure>
+          <figure>
+            <a href="">
+              <img src=${service} alt="カスタムペイント" />
+              <figcaption>
+                <p class="card-title">鈑金・塗装</p>
+                <p class="card-text">アウディA7 側面キズ、凹みの修理鈑金、塗装で元通りの仕上がりに。</p>
+              </figcaption>
+            </a>
+          </figure>
+          <figure>
+            <a href="">
+              <img src=${service} alt="カスタムペイント" />
+              <figcaption>
+                <p class="card-title">カスタムペイント</p>
+                <p class="card-text">ネイキッド フルカスタムハマー風にカスタム。</p>
+              </figcaption>
+            </a>
+          </figure>
+        </div>
+      </section>
+      <section class="instagram">
+        <h2 class="section-title">Instagram</h2>
+        <div class="instagram-link-container">
+          <p class="instagram-link"><a href="">Follow us<span class="arrow"></span></a></p>
+        </div>
+        <div class="insta-img-container">
+          <img src=${instaImage} alt="Instagram" />
+          <img src=${instaImage} alt="Instagram" />
+          <img src=${instaImage} alt="Instagram" />
+          <img src=${instaImage} alt="Instagram" />
+          <img src=${instaImage} alt="Instagram" />
+        </div>
+        <div class="insta-background-bottom"></div>
+      </section>
     </main>
     <footer>
-      <p>&copy;2024 GBT service All Rights Reserved.</p>
+      <div class="footer-high">
+        <ul class="footer-high-links">
+          <li>
+            <a href="">
+              <p class="list-title">Stock List</p>
+              <p class="text">在庫車両をご覧になりたい方はこちら</p>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <p class="list-title">Feature</p>
+              <p class="text">「バナナフィガロ」の特集サイトへ</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer-low">
+        <div class="footer-flex-left">
+          <img class="logo" src=${logo} alt="GTBサービスのロゴ"/>
+          <address>
+            <p class="address">〒444-0951<br>岡崎市北野町字一番訳5番地1<br><span class="tel-icon"></span>0564-31-7273</p>
+          </address>
+        </div>
+        <div class="footer-flex-right">
+          <ul class="footer-low-links">
+            <li>
+              <a href="">私たちについて</a>
+              <ul>
+                <li><a href="">会社案内</a></li>
+                <li><a href="">アクセス</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="">事業案内</a>
+              <ul>
+                <li><a href="">鈑金・塗装</a></li>
+                <li><a href="">整備・車検</a></li>
+                <li><a href="">新車・中古車販売</a></li>
+                <li><a href="">カスタムペイント</a></li>
+              </ul>
+            </li>
+            <li><a href="">施工実績</a></li>
+            <li><a href="">お問い合わせ</a></li>
+          </ul>
+          <div class="instagram-link-container">
+            <p class="instagram-link"><a href="">Follow us<span class="arrow"></span></a></p>
+          </div>
+        </div>
+      </div>
+      <p class="copyright">&copy;2024 GBT service All Rights Reserved.</p>
     </footer>
   </div>
 `;

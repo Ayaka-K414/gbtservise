@@ -1,26 +1,18 @@
 // ==================================================================================
 // メディアクエリ
 // ==================================================================================
-$tablet: 768px;
-$pcs: 1024px;
-$pcl: 1440px;
+$sp: 768px;
+$tablet: 1024px;
 
+
+@mixin sp {
+    @media screen and (max-width: $sp){
+        @content;
+    }
+}
 
 @mixin tablet {
     @media screen and (max-width: $tablet){
         @content;
     }
 }
-
-@mixin pcs {
-    @media screen and (max-width: $pcs){
-        @content;
-    }
-}
-
-@mixin pcl {
-    @media screen and (max-width: $pcl){
-        @content;
-    }
-}
-
