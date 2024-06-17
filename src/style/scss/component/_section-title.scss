@@ -1,0 +1,11 @@
+@use '../../scss/setting/mixin' as *;
+@use '../../scss/setting/variable' as *;
+
+.section-title{
+    color: #fff;
+    -webkit-text-stroke: 6px #000;
+    paint-order: stroke fill;
+    // @include tablet {
+    //     text-shadow: 1px 1px 0 #000,-1px 1px 0 #000,-1px -1px 0 #000,1px -1px 0 #000;
+    // }
+}

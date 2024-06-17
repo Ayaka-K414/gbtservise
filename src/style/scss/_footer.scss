@@ -1,5 +1,5 @@
-@use '../scss/mixin' as *;
-@use '../scss/variable' as *;
+@use '../scss/setting/mixin' as *;
+@use '../scss/setting/variable' as *;
 
 footer {
     .footer-high {
@@ -18,7 +18,7 @@ footer {
                         text-align: center;
                         border-bottom: 2px solid $color--yellow;
                         padding: 4px 0;
-                        margin: 0 20px;                
+                        margin: 0 20px;
                     }
                     .text {
                         font-size: 1.6rem;
@@ -37,6 +37,11 @@ footer {
                             margin-left: 16px;
                         }
                     }
+                }
+                &:hover {
+                    border-bottom: 1px solid #000;
+                    background-color: $color--yellow;
+                    transition: all 0.3s ease-out;
                 }
             }
             li:first-of-type {
@@ -92,12 +97,20 @@ footer {
                     line-height: 23px;
                     padding: 6px 0;
                 }
+                ul {
+                    .under-pages-links {
+                        a {
+                        font-size: 1.4rem;
+                        line-height: 20px;
+                        font-weight: 400;
+                        }
+                    }
+                }
             }
         }
         .instagram-link-container {
             display: flex;
             justify-content: flex-end;
-            margin: 30px 0;
             .instagram-link {
                 display: inline-block;
                 padding: 5px 0;
@@ -106,13 +119,19 @@ footer {
                 line-height: 23px;
                 text-align: left;
                 border-bottom: 3px solid #FEEF44;
+                &:hover {
+                    border-bottom: 1px solid #000;
+                    background-color: $color--yellow;
+                    border-radius: 5px 5px 0 0;
+                    transition: all 0.3s ease-out;
+                }    
                 a {
                     span::before {
                         content: "";
                         display: inline-block;
                         width: 36px;
                         height: 5px;
-                        background-image: url("../../public/follow-us-arrow.png");
+                        background-image: url("../../public/top/follow-us-arrow.png");
                         background-size: contain;
                         vertical-align: middle;
                         margin-left: 16px;

@@ -1,5 +1,5 @@
-@use '../scss/mixin' as *;
-@use '../scss/variable' as *;
+@use '../scss/setting/mixin' as *;
+@use '../scss/setting/variable' as *;
 
 .about-us {
     background-color: #FAF2EB;
@@ -23,8 +23,6 @@
                 font-size: 10.0rem;
                 font-weight: 700;
                 line-height: 86px;
-                color: $color--white;
-                text-shadow: 2px 2px 0 #000,-2px 2px 0 #000,-2px -2px 0 #000,2px -2px 0 #000;
                 @include tablet {
                     padding-bottom: 8px;
                     font-size: 7.0rem;

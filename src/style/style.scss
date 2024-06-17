@@ -1,6 +1,12 @@
-@use 'scss/base';
+// ベーススタイリング
+@use 'scss/setting/base';
+
+// ブレイクポイント（mixin）とカラー変数（variable）
+@use 'scss/setting/mixin';
+@use 'scss/setting/variable';
+
+// セクションスタイリング
 @use 'scss/header';
-@use 'scss/mixin';
 @use 'scss/main-visual';
 @use 'scss/about-us';
 @use 'scss/service';
@@ -8,3 +14,5 @@
 @use 'scss/instagram';
 @use 'scss/footer';
 
+// コンポーネント
+@use 'scss/component/section-title';
