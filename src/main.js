@@ -29,7 +29,7 @@ document.querySelector('#app').innerHTML = `
         <li><a href="">事業案内</a></li>
         <li><a href="">アクセス</a></li>
         <li><a href="">施工実績</a></li>
-        <li class="contact"><a href="">お問い合わせ</a></li>
+        <li class="list-contact"><a href="">お問い合わせ</a></li>
         <li class="insta"><a href=""><img src=${insta} art="Instagramアイコン"></a></li>
       </nav>
       <button class="hamburger">
@@ -182,6 +182,7 @@ document.querySelector('#app').innerHTML = `
           <img src=${instaImage05} alt="Instagram" />
         </div>
         <div class="insta-background-bottom"></div>
+        <div class="bg"></div>
       </section>
     </main>
     <footer>

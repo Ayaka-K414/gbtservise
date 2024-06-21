@@ -20,9 +20,6 @@
             }
             .section-title {
                 padding-bottom: 24px;
-                font-size: 10.0rem;
-                font-weight: 700;
-                line-height: 86px;
                 @include tablet {
                     padding-bottom: 8px;
                     font-size: 7.0rem;
@@ -36,9 +33,6 @@
             }
             .section-subtitle {
                 padding-bottom: 20px;
-                font-size: 26px;
-                font-weight: 500;
-                line-height: 37px;
                 @include tablet {
                     font-size: 20px;
                     line-height: 28px

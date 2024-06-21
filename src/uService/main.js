@@ -22,15 +22,13 @@ document.querySelector('#app').innerHTML = `
         </button>
         </header>
         <main>
-            <section class="about-us">
-                <div class="about-us-container">
-                    <h2 class="section-title">About us</h2>
-                    <p class="section-subtitle">・私たちについて・</p>
-                    <img class="about-us-img" src=${aboutus} alt="会社案内" />
-                    <div class="about-us-text">
-                        <h3>カーライフをもっと楽しく。</h3>
-                        <p class="text-large">私たちGBTサービスが大切にしていることは、<br>車と一緒に、より豊かで楽しい日常をお客様に届けるということ。</p>
-                        <p class=text-small>自動車販売、新車から中古車やカスタムカーなど様々な種類を取り扱いしており、<br>お客様の満足のいくお車をお探しいたします。<br>自社で鈑金塗装修理をしておりますので購入してからのアフターケアもお任せください。<br>また、鈑金、塗装、車検、修理や、今お乗りのお車を自分好みの色にカスタムしたいなど車のことなら<br>何でもご相談ください。</p>
+            <section class="service">
+                <div class="service-container">
+                    <h2 class="section-title">Service</h2>
+                    <p class="section-subtitle">・事業内容・</p>
+                    <img class="service-img" src=${aboutus} alt="会社案内" />
+                    <div class="service-text">
+                        <p>自動車販売、新車から中古車やカスタムカーなど様々な種類を取り扱いしており、お客様の満足のいくお車をお探しいたします。<br>自社で鈑金塗装修理をしておりますので購入してからのアフターケアもお任せください。<br>また、鈑金、塗装、車検、修理や、今お乗りのお車を自分好みの色にカスタムしたいなど車のことなら何でもご相談してください。</p>
                     </div>
                 </div>
             </section>
@@ -52,16 +50,14 @@ document.querySelector('#app').innerHTML = `
                 <div class="access-container">
                     <h2 class="section-title">Access</h2>
                     <p class="section-subtitle">・アクセス・</p>
-                    <div>
-                        <div class="access-map"><img src=${aboutus}></div>
-                        <div class="flex-container">
-                            <address class="access-address">〒444-0951 岡崎市北野町字一番訳5番地1</address>
-                            <div class="access-link-container">
-                                <a class="access-link" href="">
-                                <p class="text">Google map</p>
-                                <p class="arrow">→</p>
-                                </a>
-                            </div>
+                    <div class="access-map"><img src=${aboutus}></div>
+                    <div class="flex-container">
+                        <address class="access-address">〒444-0951 岡崎市北野町字一番訳5番地1</address>
+                        <div class="access-link-container">
+                            <a class="access-link" href="">
+                            <p class="text">Google map</p>
+                            <p class="arrow">→</p>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -77,7 +73,6 @@ document.querySelector('#app').innerHTML = `
                     </dl>
                 </div>
                 <div class="insta-background-bottom"></div>
-                <div class="bg"></div>
             </section>
         </main>
         <footer>

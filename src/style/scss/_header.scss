@@ -47,11 +47,11 @@ header {
                 border-bottom: 3px solid $color--yellow;
             }
         }
-        .contact::before {
+        .list-contact::before {
             content: "|";
             padding-right: 20px;
         }
-        .contact::after {
+        .list-contact::after {
             content: "|";
             padding-left: 20px;            
         }

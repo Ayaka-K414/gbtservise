@@ -1,0 +1,26 @@
+@use '../../style/scss/setting/mixin' as *;
+@use '../../style/scss/setting/variable' as *;
+@use '../../style/scss/component/section-title' as *;
+@use '../../style/scss/component/section-subtitle' as *;
+
+.service {
+    padding: 0 11%;
+    .service-container {
+        // .section-title {
+            
+        // }
+        // .section-subtitle {
+            
+        // }
+        .service-img {
+            width: 496px;
+            height: 546px;
+        }
+        .service-text {
+            .text-large {
+                font-size: 1.8rem;
+                line-height: 2.6rem;
+            }
+        }
+    }
+}
