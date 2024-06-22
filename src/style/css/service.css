@@ -345,6 +345,8 @@ article .article-container .title-flex .service-content figure .flex-img img {
   width: 300px;
   height: 330px;
   border-radius: 20px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 article .article-container .title-flex .service-content figure .flex-img .img-small {
   display: flex;

@@ -3,7 +3,18 @@ import '../style/css/works.css';
 import logo from '../public/logo.png';
 import insta from '../public/instagram.png';
 import hamburger from '../public/top/hamburger-button.png';
-import works01 from '../public/top/works01.jpg';
+import archive01 from '../public/works/archive01.jpg';
+import archive02 from '../public/works/archive02.jpg';
+import archive03 from '../public/works/archive03.jpg';
+import archive04 from '../public/works/archive04.jpg';
+import archive05 from '../public/works/archive05.jpg';
+import archive06 from '../public/works/archive06.jpg';
+import archive07 from '../public/works/archive07.jpg';
+import archive08 from '../public/works/archive08.jpg';
+import archive09 from '../public/works/archive09.jpg';
+import archive10 from '../public/works/archive10.jpg';
+import archive11 from '../public/works/archive11.jpg';
+import archive12 from '../public/works/archive12.jpg';
 
 
 
@@ -30,7 +41,7 @@ document.querySelector('#app').innerHTML = `
                 <div class="card-container">
                     <figure>
                         <a href="">
-                        <img src=${works01} alt="鈑金・塗装" />
+                        <img src=${archive01} alt="鈑金・塗装" />
                         <figcaption>
                             <p class="card-title">カスタムペイント</p>
                             <p class="card-text">ミラジーノのカスタムペイント</p>
@@ -39,7 +50,7 @@ document.querySelector('#app').innerHTML = `
                     </figure>
                     <figure>
                         <a href="">
-                        <img src=${works01} alt="整備・車検" />
+                        <img src=${archive02} alt="整備・車検" />
                         <figcaption>
                             <p class="card-title">オールペン</p>
                             <p class="card-text">ジムニーのオールペン</p>
@@ -48,7 +59,7 @@ document.querySelector('#app').innerHTML = `
                     </figure>
                     <figure>
                         <a href="">
-                        <img src=${works01} alt="新車・中古車販売" />
+                        <img src=${archive03} alt="新車・中古車販売" />
                         <figcaption>
                             <p class="card-title">カスタムペイント</p>
                             <p class="card-text">グラインダーペイント</p>
@@ -57,7 +68,7 @@ document.querySelector('#app').innerHTML = `
                     </figure>
                     <figure>
                         <a href="">
-                        <img src=${works01} alt="カスタムペイント" />
+                        <img src=${archive04} alt="カスタムペイント" />
                         <figcaption>
                             <p class="card-title">フルカスタム</p>
                             <p class="card-text">ネイキッドのフルカスタム</p>
@@ -66,7 +77,7 @@ document.querySelector('#app').innerHTML = `
                     </figure>
                     <figure>
                         <a href="">
-                        <img src=${works01} alt="カスタムペイント" />
+                        <img src=${archive05} alt="カスタムペイント" />
                         <figcaption>
                             <p class="card-title">オールペン</p>
                             <p class="card-text">ミラジーノのオールペン</p>
@@ -75,7 +86,7 @@ document.querySelector('#app').innerHTML = `
                     </figure>
                     <figure>
                         <a href="">
-                        <img src=${works01} alt="カスタムペイント" />
+                        <img src=${archive06} alt="カスタムペイント" />
                         <figcaption>
                             <p class="card-title">オールペン</p>
                             <p class="card-text">ハイエースのオールペン</p>
@@ -84,7 +95,7 @@ document.querySelector('#app').innerHTML = `
                     </figure>
                     <figure>
                         <a href="">
-                        <img src=${works01} alt="カスタムペイント" />
+                        <img src=${archive07} alt="カスタムペイント" />
                         <figcaption>
                             <p class="card-title">カスタムペイント</p>
                             <p class="card-text">ベルエアのラップペイント</p>
@@ -93,7 +104,7 @@ document.querySelector('#app').innerHTML = `
                     </figure>
                     <figure>
                         <a href="">
-                        <img src=${works01} alt="カスタムペイント" />
+                        <img src=${archive08} alt="カスタムペイント" />
                         <figcaption>
                             <p class="card-title">鈑金・塗装</p>
                             <p class="card-text">アウディA7の側面キズ、凹み修理</p>
@@ -102,7 +113,7 @@ document.querySelector('#app').innerHTML = `
                     </figure>
                     <figure>
                         <a href="">
-                        <img src=${works01} alt="カスタムペイント" />
+                        <img src=${archive09} alt="カスタムペイント" />
                         <figcaption>
                             <p class="card-title">カスタムペイント</p>
                             <p class="card-text">バイクヘルメットのペイント</p>
@@ -111,7 +122,7 @@ document.querySelector('#app').innerHTML = `
                     </figure>
                     <figure>
                         <a href="">
-                        <img src=${works01} alt="カスタムペイント" />
+                        <img src=${archive10} alt="カスタムペイント" />
                         <figcaption>
                             <p class="card-title">カスタムペイント</p>
                             <p class="card-text">マスタングのカスタムペイント</p>
@@ -120,7 +131,7 @@ document.querySelector('#app').innerHTML = `
                     </figure>
                     <figure>
                         <a href="">
-                        <img src=${works01} alt="カスタムペイント" />
+                        <img src=${archive11} alt="カスタムペイント" />
                         <figcaption>
                             <p class="card-title">レストア</p>
                             <p class="card-text">ホンダN360のレストア</p>
@@ -129,7 +140,7 @@ document.querySelector('#app').innerHTML = `
                     </figure>
                     <figure>
                         <a href="">
-                        <img src=${works01} alt="カスタムペイント" />
+                        <img src=${archive12} alt="カスタムペイント" />
                         <figcaption>
                             <p class="card-title">カスタムペイント</p>
                             <p class="card-text">ハーレーのカスタムペイント</p>

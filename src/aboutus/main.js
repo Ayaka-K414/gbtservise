@@ -3,7 +3,7 @@ import '../style/css/aboutus.css';
 import logo from '../public/logo.png';
 import insta from '../public/instagram.png';
 import hamburger from '../public/top/hamburger-button.png';
-import aboutus from '../public/top/aboutus.jpg'
+import aboutusMain from '../public/aboutus/aboutus-main.png'
 
 document.querySelector('#app').innerHTML = `
     <div>
@@ -26,7 +26,8 @@ document.querySelector('#app').innerHTML = `
                 <div class="about-us-container">
                     <h2 class="section-title">About us</h2>
                     <p class="section-subtitle">・私たちについて・</p>
-                    <img class="about-us-img" src=${aboutus} alt="会社案内" />
+                    <div class="about-us-img-container">
+                    </div>
                     <div class="about-us-text">
                         <h3>カーライフをもっと楽しく。</h3>
                         <p class="text-large">私たちGBTサービスが大切にしていることは、<br>車と一緒に、より豊かで楽しい日常をお客様に届けるということ。</p>
@@ -53,7 +54,7 @@ document.querySelector('#app').innerHTML = `
                     <h2 class="section-title">Access</h2>
                     <p class="section-subtitle">・アクセス・</p>
                     <div>
-                        <div class="access-map"><img src=${aboutus}></div>
+                        <div class="access-map"><img src=${aboutusMain}></div>
                         <div class="flex-container">
                             <address class="access-address">〒444-0951 岡崎市北野町字一番訳5番地1</address>
                             <div class="access-link-container">

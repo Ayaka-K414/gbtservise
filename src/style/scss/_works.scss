@@ -3,20 +3,14 @@
 
 .works {
     background-color: $color--lightblue;
-    // padding-bottom: 70px;
     padding-top: 180px;
     .flex-container {
         display: flex;
         justify-content: space-between;
-        // max-width: 1440px;
-        // margin: 0 auto;
         padding: 0 11%;
         .section-title-container {
             .section-title {
                 padding-bottom: 24px;
-                font-size: 10.0rem;
-                font-weight: 700;
-                line-height: 86px;
                 @include tablet {
                     text-shadow: 1px 1px 0 #000,-1px 1px 0 #000,-1px -1px 0 #000,1px -1px 0 #000;
                 }
