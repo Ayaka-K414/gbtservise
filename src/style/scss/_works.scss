@@ -1,5 +1,5 @@
-@use '../scss/mixin' as *;
-@use '../scss/variable' as *;
+@use '../scss/setting/mixin' as *;
+@use '../scss/setting/variable' as *;
 
 .works {
     background-color: $color--lightblue;
@@ -14,11 +14,9 @@
         .section-title-container {
             .section-title {
                 padding-bottom: 24px;
-                font-size: 100px;
+                font-size: 10.0rem;
                 font-weight: 700;
                 line-height: 86px;
-                color: $color--white;
-                text-shadow: 2px 2px 0 #000,-2px 2px 0 #000,-2px -2px 0 #000,2px -2px 0 #000;
                 @include tablet {
                     text-shadow: 1px 1px 0 #000,-1px 1px 0 #000,-1px -1px 0 #000,1px -1px 0 #000;
                 }

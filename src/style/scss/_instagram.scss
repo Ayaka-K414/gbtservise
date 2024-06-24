@@ -1,5 +1,5 @@
-@use '../scss/mixin' as *;
-@use '../scss/variable' as *;
+@use '../scss/setting/mixin' as *;
+@use '../scss/setting/variable' as *;
 
 .instagram {
     background-image: url("../../public/top-insta-high1440.png");
@@ -10,7 +10,6 @@
         font-size: 10.0rem;
         font-weight: 700;
         line-height: 86px;
-        color: $color--white;
         text-shadow: 2px 2px 0 #000,-2px 2px 0 #000,-2px -2px 0 #000,2px -2px 0 #000,5px 5px 0 $color--green;
         text-align: center;
     }
@@ -26,13 +25,19 @@
             line-height: 23px;
             text-align: left;
             border-bottom: 3px solid #FEEF44;
+            &:hover {
+                border-bottom: 1px solid #000;
+                background-color: $color--yellow;
+                border-radius: 5px 5px 0 0;
+                transition: all 0.3s ease-out;
+            }
             a {
                 span::before {
                     content: "";
                     display: inline-block;
                     width: 36px;
                     height: 5px;
-                    background-image: url("../../public/follow-us-arrow.png");
+                    background-image: url("../../public/top/follow-us-arrow.png");
                     background-size: contain;
                     vertical-align: middle;
                     margin-left: 16px;
@@ -52,11 +57,16 @@
     }
     .insta-img-container {
         text-align: center;
+        img {
+            width: 280px;
+            height: 280px;
+        }
     }
     .insta-background-bottom {
         background-image: url("../../public/top-insta-bottom1440.png");
-        width: 100%;
         height: 180px;
+        background-position: center;
+        background-size: cover;
         background-color: $color--lightblue;
     }
 }

@@ -1,12 +1,24 @@
 import '../src/style/css/ress.css'
 import '../src/style/css/style.css'
 import logo from '/logo.png';
-import mainvisual from '/954x577.png';
 import insta from '/instagram.png';
-import hamburger from '/hamburger-button.png';
-import service from '/service.jpeg';
-import aboutus from '/aboutus.jpeg';
-import instaImage from '/rectangle20.png';
+import hamburger from '/top/hamburger-button.png';
+import mainvisual from '/top/main.jpg';
+import aboutus from '/top/aboutus.jpg';
+import service01 from '/top/service01.jpg';
+import service02 from '/top/service02.jpg';
+import service03 from '/top/service03.jpg';
+import service04 from '/top/service04.jpg';
+import works01 from '/top/works01.jpg';
+import works02 from '/top/works02.jpg';
+import works03 from '/top/works03.jpg';
+import works04 from '/top/works04.jpg';
+import works05 from '/top/works05.jpg';
+import works06 from '/top/works06.jpg';
+import instaImage02 from '/top/instagram02.jpg';
+import instaImage03 from '/top/instagram03.jpg';
+import instaImage04 from '/top/instagram04.jpg';
+import instaImage05 from '/top/instagram05.jpg';
 
 document.querySelector('#app').innerHTML = `
   <div>
@@ -28,7 +40,7 @@ document.querySelector('#app').innerHTML = `
       <div class="main-visual">
         <img src=${mainvisual} alt="メインビジュアル" />
         <div>
-          <h1><span>あなただけの</span>１台で、<br><span>カーライフを</span><span>もっと</span>楽しく。</h1>
+          <h1 id="textContainer" class="text-container">あなただけの<br>１台で、<br>カーライフを<br>もっと<br>楽しく。</h1>
           <p><span pan>Just For One </span>Enjoy Car Life!</p>
         </div>
       </div>
@@ -52,7 +64,7 @@ document.querySelector('#app').innerHTML = `
         </div>
         <div class="feature">
           <h3 class="feature-title">Feature</h3>
-          <a class="feature-link" href=""><p>当社の看板車「バナナフィガロ」が特集されました。<span>クリックして特集サイトへ</span></p></a>
+          <a class="feature-link" href="https://www.automesseweb.jp/2021/12/22/862327"><p>当社の看板車「バナナフィガロ」が特集されました。<span>クリックして特集サイトへ</span></p></a>
         </div>
       </section>
       <section class="service">
@@ -63,25 +75,25 @@ document.querySelector('#app').innerHTML = `
         <div class="card-container">
           <figure>
             <a href="">
-              <img src=${service} alt="鈑金・塗装" />
+              <img src=${service01} alt="鈑金・塗装" />
               <figcaption>鈑金・塗装</figcaption>
             </a>
           </figure>
           <figure>
             <a href="">
-              <img src=${service} alt="整備・車検" />
+              <img src=${service02} alt="整備・車検" />
               <figcaption>整備・車検</figcaption>
             </a>
           </figure>
           <figure>
             <a href="">
-              <img src=${service} alt="新車・中古車販売" />
+              <img src=${service03} alt="新車・中古車販売" />
               <figcaption>新車・中古車販売</figcaption>
             </a>
           </figure>
           <figure>
             <a href="">
-              <img src=${service} alt="カスタムペイント" />
+              <img src=${service04} alt="カスタムペイント" />
               <figcaption>カスタムペイント</figcaption>
             </a>
           </figure>
@@ -103,7 +115,7 @@ document.querySelector('#app').innerHTML = `
         <div class="card-container">
           <figure>
             <a href="">
-              <img src=${service} alt="鈑金・塗装" />
+              <img src=${works01} alt="鈑金・塗装" />
               <figcaption>
                 <p class="card-title">カスタムペイント</p>
                 <p class="card-text">アウディA7 側面キズ、凹みの修理 鈑金、塗装で元通りの仕上がりに。</p>
@@ -112,7 +124,7 @@ document.querySelector('#app').innerHTML = `
           </figure>
           <figure>
             <a href="">
-              <img src=${service} alt="整備・車検" />
+              <img src=${works02} alt="整備・車検" />
               <figcaption>
                 <p class="card-title">カスタムペイント</p>
                 <p class="card-text">ジムニー オールペンおしゃれ仕様にカスタム。</p>
@@ -121,7 +133,7 @@ document.querySelector('#app').innerHTML = `
           </figure>
           <figure>
             <a href="">
-              <img src=${service} alt="新車・中古車販売" />
+              <img src=${works03} alt="新車・中古車販売" />
               <figcaption>
                 <p class="card-title">カスタムペイント</p>
                 <p class="card-text">ハイエース オールペンブルー系のオリジナルカラー。</p>
@@ -130,7 +142,7 @@ document.querySelector('#app').innerHTML = `
           </figure>
           <figure>
             <a href="">
-              <img src=${service} alt="カスタムペイント" />
+              <img src=${works04} alt="カスタムペイント" />
               <figcaption>
                 <p class="card-title">カスタムペイント</p>
                 <p class="card-text">ミラジーノ オールペンブラウン×ホワイトでかわいらしく。</p>
@@ -139,7 +151,7 @@ document.querySelector('#app').innerHTML = `
           </figure>
           <figure>
             <a href="">
-              <img src=${service} alt="カスタムペイント" />
+              <img src=${works05} alt="カスタムペイント" />
               <figcaption>
                 <p class="card-title">鈑金・塗装</p>
                 <p class="card-text">アウディA7 側面キズ、凹みの修理鈑金、塗装で元通りの仕上がりに。</p>
@@ -148,7 +160,7 @@ document.querySelector('#app').innerHTML = `
           </figure>
           <figure>
             <a href="">
-              <img src=${service} alt="カスタムペイント" />
+              <img src=${works06} alt="カスタムペイント" />
               <figcaption>
                 <p class="card-title">カスタムペイント</p>
                 <p class="card-text">ネイキッド フルカスタムハマー風にカスタム。</p>
@@ -163,11 +175,11 @@ document.querySelector('#app').innerHTML = `
           <p class="instagram-link"><a href="">Follow us<span class="arrow"></span></a></p>
         </div>
         <div class="insta-img-container">
-          <img src=${instaImage} alt="Instagram" />
-          <img src=${instaImage} alt="Instagram" />
-          <img src=${instaImage} alt="Instagram" />
-          <img src=${instaImage} alt="Instagram" />
-          <img src=${instaImage} alt="Instagram" />
+          <img src=${mainvisual} alt="Instagram" />
+          <img src=${instaImage02} alt="Instagram" />
+          <img src=${instaImage03} alt="Instagram" />
+          <img src=${instaImage04} alt="Instagram" />
+          <img src=${instaImage05} alt="Instagram" />
         </div>
         <div class="insta-background-bottom"></div>
       </section>
@@ -201,17 +213,17 @@ document.querySelector('#app').innerHTML = `
             <li>
               <a href="">私たちについて</a>
               <ul>
-                <li><a href="">会社案内</a></li>
-                <li><a href="">アクセス</a></li>
+                <li class="under-pages-links"><a href="">会社案内</a></li>
+                <li class="under-pages-links"><a href="">アクセス</a></li>
               </ul>
             </li>
             <li>
               <a href="">事業案内</a>
               <ul>
-                <li><a href="">鈑金・塗装</a></li>
-                <li><a href="">整備・車検</a></li>
-                <li><a href="">新車・中古車販売</a></li>
-                <li><a href="">カスタムペイント</a></li>
+                <li class="under-pages-links"><a href="">鈑金・塗装</a></li>
+                <li class="under-pages-links"><a href="">整備・車検</a></li>
+                <li class="under-pages-links"><a href="">新車・中古車販売</a></li>
+                <li class="under-pages-links"><a href="">カスタムペイント</a></li>
               </ul>
             </li>
             <li><a href="">施工実績</a></li>

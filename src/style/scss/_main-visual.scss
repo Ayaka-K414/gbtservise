@@ -1,5 +1,5 @@
-@use '../scss/mixin' as *;
-@use '../scss/variable' as *;
+@use '../scss/setting/mixin' as *;
+@use '../scss/setting/variable' as *;
 
 .main-visual {
     display: flex;
@@ -13,7 +13,12 @@
         padding: 0 5px 8px 5px;
     }
     img {
+        width: 954px;
+        height: 577px;
+        object-fit: cover;
         max-width: 68%;
+        border: 1px solid #000;
+        border-radius: 35px;
         @include tablet {
             display: inline;
             min-width: 100%;
@@ -31,13 +36,50 @@
         @include tablet {
             display: block;
         }
-        h1 {
-            color: $color--white;
-            text-shadow: 1px 1px 0 #000,-1px 1px 0 #000,-1.5px -1.5px 0 #000,1.5px -1.5px 0 #000,1.5px 1.5px 0 $color--green; 
+        .text-container {
+            // color: $color--white;
+            // font-weight: 700;
+            // font-size: 5rem;
+            // line-height: 68px;
+            // -webkit-text-stroke: 5px #000;
+            // paint-order: stroke fill;
+            // text-shadow: 3px 3px 1px $color--green;
+            // margin: 71px 0 50px 20px;
+            // position: relative;
+            // padding-bottom: 24px;
+            // font-size: 5.0rem;
+            // font-weight: 700;
+            // line-height: 68px;
+            // color: $color--white;
+            // text-shadow: 2px 2px 1px $color--lightblue;
+            position: relative;
+            display: inline-block;
+            padding: 80px 0 20px 24px;
+            font-size: 4rem;
             font-weight: 700;
-            font-size: 5rem;
-            line-height: 68px;
-            margin: 71px 0 50px 20px;
+            line-height: 60px;
+            color: #fff;
+            text-shadow: 1px 1px 0 #000,-1px 1px 0 #000,-1px -1px 0 #000,1px -1px 0 #000,2px 2px 0 $color--green;
+            &::before {
+                // content: attr(data-text);
+                // position: absolute;
+                // top: 0;
+                // left: 0;
+                // color: transparent;
+                // -webkit-text-stroke: 5px #000;
+                content: attr(data-text);
+                position: absolute;
+                top: 0;
+                left: 0;
+                white-space: pre-wrap;
+                z-index: -1;
+                color: transparent;
+                -webkit-text-stroke: 5px #000;
+                font-size: inherit;
+                font-weight: inherit;
+                line-height: inherit;
+                padding: inherit;
+            }
             @include tablet {
                 margin: 0;
                 font-size: 4rem;

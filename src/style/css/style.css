@@ -115,7 +115,13 @@ header .hamburger {
   }
 }
 .main-visual img {
+  width: 954px;
+  height: 577px;
+  -o-object-fit: cover;
+     object-fit: cover;
   max-width: 68%;
+  border: 1px solid #000;
+  border-radius: 35px;
 }
 @media screen and (max-width: 1024px) {
   .main-visual img {
@@ -140,16 +146,32 @@ header .hamburger {
     display: block;
   }
 }
-.main-visual div h1 {
-  color: #FFFFFF;
-  text-shadow: 1px 1px 0 #000, -1px 1px 0 #000, -1.5px -1.5px 0 #000, 1.5px -1.5px 0 #000, 1.5px 1.5px 0 #AAF2D1;
+.main-visual div .text-container {
+  position: relative;
+  display: inline-block;
+  padding: 80px 0 20px 24px;
+  font-size: 4rem;
   font-weight: 700;
-  font-size: 5rem;
-  line-height: 68px;
-  margin: 71px 0 50px 20px;
+  line-height: 60px;
+  color: #fff;
+  text-shadow: 1px 1px 0 #000, -1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, 2px 2px 0 #AAF2D1;
+}
+.main-visual div .text-container::before {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  white-space: pre-wrap;
+  z-index: -1;
+  color: transparent;
+  -webkit-text-stroke: 5px #000;
+  font-size: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+  padding: inherit;
 }
 @media screen and (max-width: 1024px) {
-  .main-visual div h1 {
+  .main-visual div .text-container {
     margin: 0;
     font-size: 4rem;
     line-height: 54px;
@@ -158,18 +180,18 @@ header .hamburger {
   }
 }
 @media screen and (max-width: 768px) {
-  .main-visual div h1 {
+  .main-visual div .text-container {
     padding: 8px 0 14px 8px;
     font-size: 2.4rem;
     line-height: 32px;
   }
 }
-.main-visual div h1 span::after {
+.main-visual div .text-container span::after {
   content: "\a";
   white-space: pre;
 }
 @media screen and (max-width: 1024px) {
-  .main-visual div h1 span::after {
+  .main-visual div .text-container span::after {
     content: "";
     white-space: none;
   }
@@ -248,8 +270,6 @@ header .hamburger {
   font-size: 10rem;
   font-weight: 700;
   line-height: 86px;
-  color: #FFFFFF;
-  text-shadow: 2px 2px 0 #000, -2px 2px 0 #000, -2px -2px 0 #000, 2px -2px 0 #000;
 }
 @media screen and (max-width: 1024px) {
   .about-us .about-us-container div .section-title {
@@ -435,14 +455,10 @@ header .hamburger {
   margin: 0 auto;
 }
 .service .service-container .section-title {
-  padding-top: 180px;
-  padding-bottom: 24px;
-  padding-left: 11%;
-  font-size: 100px;
+  padding: 180px 0 24px 11%;
+  font-size: 10rem;
   font-weight: 700;
   line-height: 86px;
-  color: #FFFFFF;
-  text-shadow: 2px 2px 0 #000, -2px 2px 0 #000, -2px -2px 0 #000, 2px -2px 0 #000;
 }
 @media screen and (max-width: 1024px) {
   .service .service-container .section-title {
@@ -518,11 +534,9 @@ header .hamburger {
 }
 .works .flex-container .section-title-container .section-title {
   padding-bottom: 24px;
-  font-size: 100px;
+  font-size: 10rem;
   font-weight: 700;
   line-height: 86px;
-  color: #FFFFFF;
-  text-shadow: 2px 2px 0 #000, -2px 2px 0 #000, -2px -2px 0 #000, 2px -2px 0 #000;
 }
 @media screen and (max-width: 1024px) {
   .works .flex-container .section-title-container .section-title {
@@ -640,7 +654,6 @@ header .hamburger {
   font-size: 10rem;
   font-weight: 700;
   line-height: 86px;
-  color: #FFFFFF;
   text-shadow: 2px 2px 0 #000, -2px 2px 0 #000, -2px -2px 0 #000, 2px -2px 0 #000, 5px 5px 0 #AAF2D1;
   text-align: center;
 }
@@ -658,12 +671,18 @@ header .hamburger {
   text-align: left;
   border-bottom: 3px solid #FEEF44;
 }
+.instagram .instagram-link-container .instagram-link:hover {
+  border-bottom: 1px solid #000;
+  background-color: #FEEF44;
+  border-radius: 5px 5px 0 0;
+  transition: all 0.3s ease-out;
+}
 .instagram .instagram-link-container .instagram-link a span::before {
   content: "";
   display: inline-block;
   width: 36px;
   height: 5px;
-  background-image: url("../../public/follow-us-arrow.png");
+  background-image: url("../../public/top/follow-us-arrow.png");
   background-size: contain;
   vertical-align: middle;
   margin-left: 16px;
@@ -681,10 +700,15 @@ header .hamburger {
 .instagram .insta-img-container {
   text-align: center;
 }
+.instagram .insta-img-container img {
+  width: 280px;
+  height: 280px;
+}
 .instagram .insta-background-bottom {
   background-image: url("../../public/top-insta-bottom1440.png");
-  width: 100%;
   height: 180px;
+  background-position: center;
+  background-size: cover;
   background-color: #EAF9F2;
 }
 
@@ -722,6 +746,11 @@ footer .footer-high-links li a .text::after {
   background-size: contain;
   vertical-align: middle;
   margin-left: 16px;
+}
+footer .footer-high-links li:hover {
+  border-bottom: 1px solid #000;
+  background-color: #FEEF44;
+  transition: all 0.3s ease-out;
 }
 footer .footer-high-links li:first-of-type {
   width: 360px;
@@ -771,10 +800,14 @@ footer .footer-low-links li a {
   line-height: 23px;
   padding: 6px 0;
 }
+footer .footer-low-links li ul .under-pages-links a {
+  font-size: 1.4rem;
+  line-height: 20px;
+  font-weight: 400;
+}
 footer .footer-low .instagram-link-container {
   display: flex;
   justify-content: flex-end;
-  margin: 30px 0;
 }
 footer .footer-low .instagram-link-container .instagram-link {
   display: inline-block;
@@ -785,12 +818,18 @@ footer .footer-low .instagram-link-container .instagram-link {
   text-align: left;
   border-bottom: 3px solid #FEEF44;
 }
+footer .footer-low .instagram-link-container .instagram-link:hover {
+  border-bottom: 1px solid #000;
+  background-color: #FEEF44;
+  border-radius: 5px 5px 0 0;
+  transition: all 0.3s ease-out;
+}
 footer .footer-low .instagram-link-container .instagram-link a span::before {
   content: "";
   display: inline-block;
   width: 36px;
   height: 5px;
-  background-image: url("../../public/follow-us-arrow.png");
+  background-image: url("../../public/top/follow-us-arrow.png");
   background-size: contain;
   vertical-align: middle;
   margin-left: 16px;
@@ -813,5 +852,11 @@ footer .copyright {
   color: #FFFFFF;
   background-color: #000;
   text-align: center;
+}
+
+.section-title {
+  color: #fff;
+  -webkit-text-stroke: 6px #000;
+  paint-order: stroke fill;
 }
 /*# sourceMappingURL=style.css.map */
