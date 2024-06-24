@@ -5,11 +5,12 @@
     background-image: url("../../public/TOPページ（bp_PC1024）-1.jpg");
     background-position: center;
     background-size: cover;
+    padding: 0 11%;
     .service-container {
-        max-width: 1440px;
+        // max-width: 1440px;
         margin: 0 auto;
         .section-title {
-            padding: 180px 0 24px 11%;
+            padding: 180px 0 24px;
             font-size: 10.0rem;
             font-weight: 700;
             line-height: 86px;
@@ -20,9 +21,6 @@
         .section-subtitle {
             padding-bottom: 20px;
             padding-left: 11%;
-            font-size: 26px;
-            font-weight: 500;
-            line-height: 37px;
         }    
     }
     .card-container {
@@ -55,6 +53,7 @@
                 margin-right: 0;
             }
             img {
+                object-fit: cover;
                 width: 100%;
                 height: 330px;
                 border-radius: 20px 20px 0 0;

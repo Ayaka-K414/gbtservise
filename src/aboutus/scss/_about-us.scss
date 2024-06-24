@@ -1,20 +1,16 @@
-@use '../../style/scss/mixin' as *;
-@use '../../style/scss/variable' as *;
+@use '../../style/scss/setting/mixin' as *;
+@use '../../style/scss/setting/variable' as *;
+@use '../../style/scss/component/section-title' as *;
+@use '../../style/scss/component/section-subtitle' as *;
 
 .about-us {
     background-color: $color--beige;
+    overflow: hidden;
     .about-us-container {
-        max-width: 1440px;
-        margin: 0 auto;
-        padding: 100px 160px;
-        // overflow: hidden;
+        // max-width: 1440px;
+        padding: 100px 11% 150px;
+        overflow: visible;
         .section-title{
-            padding-bottom: 24px;
-            font-size: 10.0rem;
-            font-weight: 700;
-            line-height: 86px;
-            color: $color--white;
-            text-shadow: 2px 2px 0 #000,-2px 2px 0 #000,-2px -2px 0 #000,2px -2px 0 #000;
             @include tablet {
                 padding-bottom: 8px;
                 font-size: 7.0rem;
@@ -28,9 +24,6 @@
         }
         .section-subtitle {
             padding-bottom: 20px;
-            font-size: 26px;
-            font-weight: 500;
-            line-height: 37px;
             @include tablet {
                 font-size: 20px;
                 line-height: 28px
@@ -50,12 +43,14 @@
                 font-size: 4.0rem;
                 font-weight: 700;
                 line-height: 57px;
-                color: $color--white;
-                text-shadow: 2px 2px 0 #000,-2px 2px 0 #000,-2px -2px 0 #000,2px -2px 0 #000;    
+                color: #fff;
+                -webkit-text-stroke: 4px #000;
+                paint-order: stroke fill;            
             }
             .text-large {
                 font-size: 2.0rem;
                 line-height: 28px;
+                padding: 20px 0 10px 0;
             }
             .text-small {
                 font-size: 1.8rem;

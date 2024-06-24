@@ -1,15 +1,16 @@
-@use '../../style/scss/mixin' as *;
-@use '../../style/scss/variable' as *;
+@use '../../style/scss/setting/mixin' as *;
+@use '../../style/scss/setting/variable' as *;
+@use '../../style/scss/component/section-title' as *;
+@use '../../style/scss/component/section-subtitle' as *;
 
 .company {
+    background-color: $color--beige;
     .company-container {
+        // max-width: 1440px;
+        // padding: 0 11%;
+        padding: 100px 11% 150px;
+        margin: 0 auto;
         .section-title {
-            padding-bottom: 24px;
-            font-size: 10.0rem;
-            font-weight: 700;
-            line-height: 86px;
-            color: $color--white;
-            text-shadow: 2px 2px 0 #000,-2px 2px 0 #000,-2px -2px 0 #000,2px -2px 0 #000;
             @include tablet {
                 padding-bottom: 8px;
                 font-size: 7.0rem;
@@ -22,7 +23,30 @@
             }
         }
         .section-subtitle {
-            
+            padding-bottom: 20px;
+            padding-left: 24px;
+        }
+        dl {
+            width: 960px;
+            height: 500px;
+            margin: 0 auto;
+            div {
+                display: flex;
+                border-bottom: 1px solid #545454;
+                padding: 24px 0;
+            }
+            dt {
+                width: 160px;
+                font-size: 1.8rem;
+                font-weight: 500;
+                line-height: 26px;    
+            }
+            dd {
+                width: 800px;
+                font-size: 1.8rem;
+                font-weight: 400;
+                line-height: 26px;
+            }
         }
     }
 }

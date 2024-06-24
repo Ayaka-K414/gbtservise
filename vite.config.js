@@ -1,6 +1,11 @@
-const { resolve } = require('path');
 import { defineConfig } from 'vite';
-const root = 'src'
+import { fileURLToPath } from 'url';
+import path from 'path';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
+const root = 'src';
 
 export default defineConfig({
   root: root,
@@ -8,8 +13,9 @@ export default defineConfig({
     outDir: '../dist',
     rollupOptions: {
       input: {
-        main: resolve(__dirname, root, 'index.html'),
-        aboutus: resolve(__dirname, root, 'aboutus/index.html')
+        main: path.resolve(__dirname, root, 'index.html'),
+        aboutus: path.resolve(__dirname, root, 'aboutus/index.html'),
+        uService: path.resolve(__dirname, root, 'uService/index.html')
       }
     }
   },
