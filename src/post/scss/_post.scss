@@ -1,0 +1,150 @@
+@use '../../style/scss/setting/mixin' as *;
+@use '../../style/scss/setting/variable' as *;
+@use '../../style/scss/component/section-title' as *;
+@use '../../style/scss/component/section-subtitle' as *;
+
+article {
+    background-color: $color--white;
+    .title {
+        width: 860px;
+        margin: 0 auto;
+        padding-bottom: 50px;
+        .category {
+            display: flex;
+            padding-bottom: 30px;
+            .category-title {
+                font-size: 2.4rem;
+                font-weight: 500;
+                line-height: 24px;
+                letter-spacing: 0.02em;
+            }
+            .category-subtitle {
+                font-size: 1.8rem;
+                font-weight: 500;
+                line-height: 26px;
+            }
+        }
+        .year-month {
+            font-size: 1.6rem;
+            line-height: 23px;
+        }
+        .tag {
+            font-size: 1.6rem;
+            line-height: 23px;
+            text-align: center;
+            background-color: $color--lightblue;
+        }
+        .title-text {
+            font-size: 2.4rem;
+            line-height: 34px;
+            padding-top: 10px;
+        }
+    }
+    .img-container {
+        margin-right: 80px;
+        .img-contents {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 30px;
+            .vertical-title {
+                writing-mode: vertical-rl;
+                text-orientation: sideways;
+                transform: rotate(180deg);
+                height: 276px;
+                color: #fff;
+                -webkit-text-stroke: 4px rgba($color: #6E6E6EB2, $alpha: 0.7);
+                paint-order: stroke fill;
+                font-size: 3.2rem;
+                line-height: 46px;
+                letter-spacing: 0.04em;
+                font-weight: 700;
+                text-align: right;
+                padding: 0 20px;
+            }
+            .before-img ,.after-img {
+                img {
+                    width: 420px;
+                    height: 420px;
+                    border-radius: 8px;
+                    margin-right: 20px;
+                    object-fit: cover;
+                }
+                img:last-of-type {
+                    margin-right: 0;
+                }
+            }
+            .process-img {
+                img {
+                    width: 276px;
+                    height: 276px;
+                    border-radius: 8px;
+                    margin-right: 16px;
+                    object-fit: cover;
+                }
+                img:last-of-type {
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+    .text-container {
+        width: 860px;
+        margin: 0 auto;
+        p {
+            font-size: 1.6rem;
+            line-height: 23px;
+            padding-bottom: 30px;
+        }
+    }
+    .pagenation {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 860px;
+        height: 32px;
+        margin: 0 auto;
+        padding: 120px 0;
+        font-size: 1.4rem;
+        line-height: 20px;
+        color: #6E6E6E;
+        .prev::before {
+            content: "";
+            background-image: url(../../public/prev.png);
+            background-size: contain;
+            width: 32px;
+            height: 32px;
+            display: inline-block;
+            vertical-align: middle;
+            margin-right: 10px;
+            transition: background-image 0.3s ease-out;
+        }
+        .prev:hover::before {
+            background-image: url(../../public/prev-hover.png);
+        }
+        .list {
+            border-bottom: 1px solid #6E6E6E;
+            padding: 5px;
+        }
+        .list:hover {
+            background-color: #C5C5C5;
+            border-bottom: none;
+            color: $color--white;
+            transition: all 0.3s ease-out;
+        }
+        .next::after {
+            content: "";
+            background-image: url(../../public/next.png);
+            background-size: contain;
+            width: 32px;
+            height: 32px;
+            display: inline-block;
+            vertical-align: middle;
+            margin-left: 10px;
+            transition: background-image 0.3s ease-out;
+        }
+        .next:hover::after {
+            background-image: url(../../public/next-hover.png);
+        }
+
+    }
+}

@@ -3,7 +3,20 @@ import '../style/css/service.css';
 import logo from '../public/logo.png';
 import insta from '../public/instagram.png';
 import hamburger from '../public/top/hamburger-button.png';
-import aboutus from '../public/top/aboutus.jpg'
+import serviceMain from '../public/service/service_main.jpg';
+import aboutus from '../public/aboutus/aboutus-main.png';
+import repair01 from '../public/service/repair01.jpg';
+import repair02 from '../public/service/repair02.jpg';
+import repair03 from '../public/service/repair03.jpg';
+import maintenance01 from '../public/service/maintenance01.jpg';
+import maintenance02 from '../public/service/maintenance02.jpg';
+import maintenance03 from '../public/service/maintenance03.jpg';
+import sale01 from '../public/service/sale01.jpg';
+import custom01 from '../public/service/custom01.jpg';
+import custom02 from '../public/service/custom02.jpg';
+import custom03 from '../public/service/custom03.jpg';
+
+
 
 document.querySelector('#app').innerHTML = `
     <div>
@@ -27,12 +40,12 @@ document.querySelector('#app').innerHTML = `
                     <div>
                         <h2 class="section-title">Service</h2>
                         <p class="section-subtitle">・事業内容・</p>
-                        <img class="service-img-sp" src=${aboutus} alt="会社案内" />
+                        <img class="service-img-sp" src=${serviceMain} alt="会社案内" />
                         <div class="service-text">
                             <p>自動車販売、新車から中古車やカスタムカーなど様々な種類を取り扱いしており、お客様の満足のいくお車をお探しいたします。<br>自社で鈑金塗装修理をしておりますので購入してからのアフターケアもお任せください。<br>また、鈑金、塗装、車検、修理や、今お乗りのお車を自分好みの色にカスタムしたいなど車のことなら何でもご相談してください。</p>
                         </div>
                     </div>
-                    <img class="service-img-pc" src=${aboutus} alt="私たちについて" />
+                    <img class="service-img-pc" src=${serviceMain} alt="私たちについて" />
                 </div>
             </section>
             <article>
@@ -43,10 +56,10 @@ document.querySelector('#app').innerHTML = `
                             <h4>鈑金・塗装</h4>
                             <figure>
                             <div class="flex-img">
-                                <img src=${aboutus} alt="鈑金・塗装" />
+                                <img src=${repair01} alt="鈑金・塗装" />
                                 <div class="img-small">
-                                    <img src=${aboutus} alt="鈑金・塗装" />
-                                    <img src=${aboutus} alt="鈑金・塗装" />
+                                    <img src=${repair02} alt="鈑金・塗装" />
+                                    <img src=${repair03} alt="鈑金・塗装" />
                                 </div>
                             </div>
                             <figcaption>
@@ -64,10 +77,10 @@ document.querySelector('#app').innerHTML = `
                             <h4>整備・車検</h4>
                             <figure>
                             <div class="flex-img">
-                                <img src=${aboutus} alt="鈑金・塗装" />
+                                <img src=${maintenance01} alt="鈑金・塗装" />
                                 <div class="img-small">
-                                    <img src=${aboutus} alt="鈑金・塗装" />
-                                    <img src=${aboutus} alt="鈑金・塗装" />
+                                    <img src=${maintenance02} alt="鈑金・塗装" />
+                                    <img src=${maintenance03} alt="鈑金・塗装" />
                                 </div>
                             </div>
                             <figcaption>
@@ -85,10 +98,10 @@ document.querySelector('#app').innerHTML = `
                             <h4>新車・中古車販売</h4>
                             <figure>
                             <div class="flex-img">
-                                <img src=${aboutus} alt="鈑金・塗装" />
+                                <img src=${sale01} alt="鈑金・塗装" />
                                 <div class="img-small">
-                                    <img src=${aboutus} alt="鈑金・塗装" />
-                                    <img src=${aboutus} alt="鈑金・塗装" />
+                                    <img src=${sale01} alt="鈑金・塗装" />
+                                    <img src=${sale01} alt="鈑金・塗装" />
                                 </div>
                             </div>
                             <figcaption>
@@ -106,10 +119,10 @@ document.querySelector('#app').innerHTML = `
                             <h4>カスタムペイント</h4>
                             <figure>
                             <div class="flex-img">
-                                <img src=${aboutus} alt="鈑金・塗装" />
+                                <img src=${custom01} alt="鈑金・塗装" />
                                 <div class="img-small">
-                                    <img src=${aboutus} alt="鈑金・塗装" />
-                                    <img src=${aboutus} alt="鈑金・塗装" />
+                                    <img src=${custom02} alt="鈑金・塗装" />
+                                    <img src=${custom03} alt="鈑金・塗装" />
                                 </div>
                             </div>
                             <figcaption>
