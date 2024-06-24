@@ -15,7 +15,8 @@ export default defineConfig({
       input: {
         main: path.resolve(__dirname, root, 'index.html'),
         aboutus: path.resolve(__dirname, root, 'aboutus/index.html'),
-        uService: path.resolve(__dirname, root, 'uService/index.html')
+        service: path.resolve(__dirname, root, 'service/index.html'),
+        works: path.resolve(__dirname, root, 'works/index.html')
       }
     }
   },

@@ -1,0 +1,43 @@
+@use '../../style/scss/setting/mixin' as *;
+@use '../../style/scss/setting/variable' as *;
+@use '../../style/scss/component/section-title' as *;
+@use '../../style/scss/component/section-subtitle' as *;
+
+.service {
+    // padding: 0 11%;
+    background-color: $color--lightblue;
+    .service-container {
+        display: flex;
+        align-items: center;
+        padding: 142px 11% 70px;
+        // margin: 0 auto;
+        div {
+            margin-right: 100px;
+            .section-subtitle {
+                padding-bottom: 70px;                
+            }
+            .service-img {
+                width: 496px;
+                height: 546px;
+            }
+            .service-text {
+                width: 480px;
+                height: 216px;
+                font-size: 1.8rem;
+                line-height: 26px;
+                p {
+                    font-size: 1.8rem;
+                    line-height: 2.6rem;
+                }
+            }
+        }
+        .service-img-sp {
+            display: none;
+        }
+        .service-img-pc {
+            min-width: 490px;
+            min-height: 546px;
+            border-radius: 20px;
+        }
+    }
+}
