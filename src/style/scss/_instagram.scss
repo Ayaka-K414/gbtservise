@@ -1,12 +1,48 @@
 @use '../scss/setting/mixin' as *;
 @use '../scss/setting/variable' as *;
 
-.instagram {
-    background-image: url("../../public/top-insta-high1440.png");
+.insta-bg-top {
+    background-image: url("../../public/bg/insta/top-insta-high1440.jpg");
     background-position: center;
     background-size: cover;
+    width: 100%;
+    height: 200px;
+    @include pc {
+        background-image: url("../../public/bg/insta/top-insta-high1024.jpg");
+    }
+    @include tablet {
+        background-image: url("../../public/bg/insta/top-insta-high768.jpg");
+    }
+}
+.insta-bg-bottom {
+    background-image: url("../../public/bg/insta/top-insta-bottom1440.jpg");
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 180px;
+    @include pc {
+        background-image: url("../../public/bg/insta/top-insta-bottom1024.jpg");
+    }
+    @include tablet {
+        background-image: url("../../public/bg/insta/top-insta-bottom768.jpg");
+        height: 80px;
+    }
+    @include sp {
+        background-image: url("../../public/bg/insta/top-insta-bottom375.jpg");
+    }
+}
+
+
+.instagram {
+    margin-top: -100px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1440px;
+    overflow: hidden;
+    @include tablet {
+        margin-top: -120px;
+    }
     .section-title {
-        padding-top: 250px;
         text-shadow: 2px 2px 0 #000,-2px 2px 0 #000,-2px -2px 0 #000,2px -2px 0 #000,5px 5px 0 $color--green;
         text-align: center;
     }
@@ -14,6 +50,9 @@
         display: flex;
         justify-content: flex-end;
         margin: 30px 160px 30px 0;
+        @include tablet {
+            display: none;
+        }
         .instagram-link {
             display: inline-block;
             padding: 5px 0;
@@ -52,24 +91,75 @@
             }
         }            
     }
+    .instagram-link-container-tablet {
+        display: none;
+        @include tablet {
+            display: block;
+            text-align: center;
+        }
+        .instagram-link-tablet {
+            display: inline-block;
+            padding: 5px 0;
+            font-size: 1.6rem;
+            font-weight: 700;
+            line-height: 23px;
+            border-bottom: 3px solid #FEEF44;
+            &:hover {
+                border-bottom: 1px solid #000;
+                background-color: $color--yellow;
+                border-radius: 5px 5px 0 0;
+                transition: all 0.3s ease-out;
+            }
+            a {
+                span::before {
+                    content: "";
+                    display: inline-block;
+                    width: 36px;
+                    height: 5px;
+                    background-image: url("../../public/top/follow-us-arrow.png");
+                    background-size: contain;
+                    vertical-align: middle;
+                    margin-left: 16px;
+                }
+                span::after {
+                    content: "";
+                    display: inline-block;
+                    width: 18px;
+                    height: 18px;
+                    background-image: url("../../public/instagram.png");
+                    background-size: contain;
+                    vertical-align: middle;
+                    margin-left: 16px;
+                } 
+            }
+        }
+    }
     .insta-img-container {
         text-align: center;
+        width: max-content;
+        overflow: hidden;
+        margin-left: calc(50% - 1440px/2);
+        @include tablet {
+            width: 740px;
+            margin: 0 auto;
+            padding: 40px 0;
+        }
+        @include sp {
+            width: 100%;
+            margin: 0;
+        }
         img {
             object-fit: cover;
             width: 280px;
             height: 280px;
+            @include tablet {
+                width: 146px;
+                height: 146px;
+            }
+            @include sp {
+                width: 114px;
+                height: 118px;
+            }
         }
-    }
-    .insta-background-bottom {
-        background-image: url("../../public/top-insta-bottom1440.png");
-        height: 180px;
-        background-position: center;
-        background-size: cover;
-        background-color: $color--lightblue;
-    }
-    .bg {
-        width: 100%;
-        height: 100px;
-        background-color: $color--lightblue;
     }
 }

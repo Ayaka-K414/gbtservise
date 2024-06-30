@@ -3,19 +3,26 @@
 @use '../../style/scss/component/section-title' as *;
 @use '../../style/scss/component/section-subtitle' as *;
 
-.about-us {
+main {
     background-color: $color--beige;
     overflow: hidden;
+}
+.about-us {
+    width: 1168px;
+    margin: 0 auto;
+    @include pc {
+        width: 100%;
+        padding: 0 16px;
+    }
+    @include tablet {
+        padding: 0 32px;
+    }
     .about-us-container {
-        padding: 100px 11% 150px;
-        overflow: visible;
+        padding: 100px 0 150px 0;
+        @include tablet {
+            padding: 50px 0;
+        }
         .section-title{
-            @include tablet {
-                padding-bottom: 8px;
-                font-size: 7.0rem;
-                line-height: 70px;
-                text-shadow: 1px 1px 0 #000,-1px 1px 0 #000,-1px -1px 0 #000,1px -1px 0 #000;
-            }
             @include sp {
                 font-size: 4.0rem;
                 line-height: 40px;
@@ -23,28 +30,28 @@
         }
         .section-subtitle {
             padding-bottom: 20px;
-            @include tablet {
-                font-size: 20px;
-                line-height: 28px
-            }
         }
         .about-us-img-container {
-            background-image: url(../../public/aboutus/aboutus-main.png);
+            background-image: url(../../public/aboutus/aboutus-main.jpg);
             width: 1377px;
             height: 480px;
             border: 1px solid #000;
             border-radius: 50%;
-            margin-left: 30%;
-            margin-top: -100px;
+            margin-left: 20%;
+            // transition: margin-left 0.1s ease;
+            margin-top: -50px;
             overflow: hidden;
             background-size: 1377px auto;
             background-position: 80% 60%;
-            // .about-us-img {
-            //     width: 1377px;
-            //     height: auto;
-            //     object-fit: cover;
-            //     object-position: center;
-            // }    
+            @include pc {
+                margin-left: 5%;
+                // transition: margin-left 0.1s ease;
+            }
+            @include tablet {
+                width: 1004px;
+                height: 350px;
+                margin-left: 16px;
+            }
         }
         .about-us-text {
             h3 {
@@ -53,17 +60,36 @@
                 line-height: 57px;
                 color: #fff;
                 -webkit-text-stroke: 4px #000;
-                paint-order: stroke fill;            
+                paint-order: stroke fill;
+                @include tablet {
+                    font-size: 3.2rem;
+                    line-height: 46px;
+                    letter-spacing: -0.02em;
+                }          
             }
             .text-large {
                 font-size: 2.0rem;
                 line-height: 28px;
                 padding: 20px 0 10px 0;
+                @include tablet {
+                    font-size: 1.8rem;
+                    line-height: 26px;
+                    padding: 20px 0;
+                }
             }
             .text-small {
                 font-size: 1.8rem;
                 line-height: 26px;
+                @include tablet {
+                    font-size: 1.6rem;
+                    line-height: 23px;
+                }
             }
         }
     }
+}
+
+
+#beige {
+    background-color: $color--beige;
 }

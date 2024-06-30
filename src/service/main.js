@@ -35,19 +35,21 @@ document.querySelector('#app').innerHTML = `
         </button>
         </header>
         <main>
-            <section class="service">
-                <div class="service-container">
-                    <div>
-                        <h2 class="section-title">Service</h2>
-                        <p class="section-subtitle">・事業内容・</p>
-                        <img class="service-img-sp" src=${serviceMain} alt="会社案内" />
-                        <div class="service-text">
-                            <p>自動車販売、新車から中古車やカスタムカーなど様々な種類を取り扱いしており、お客様の満足のいくお車をお探しいたします。<br>自社で鈑金塗装修理をしておりますので購入してからのアフターケアもお任せください。<br>また、鈑金、塗装、車検、修理や、今お乗りのお車を自分好みの色にカスタムしたいなど車のことなら何でもご相談してください。</p>
+            <div class="bgc-lightblue">
+                <section class="service">
+                    <div class="service-container">
+                        <div>
+                            <h2 class="section-title">Service</h2>
+                            <p class="section-subtitle">・事業内容・</p>
+                            <img class="service-img-sp" src=${serviceMain} alt="会社案内" />
+                            <div class="service-text">
+                                <p>自動車販売、新車から中古車やカスタムカーなど様々な種類を取り扱いしており、お客様の満足のいくお車をお探しいたします。<br>自社で鈑金塗装修理をしておりますので購入してからのアフターケアもお任せください。<br>また、鈑金、塗装、車検、修理や、今お乗りのお車を自分好みの色にカスタムしたいなど車のことなら何でもご相談してください。</p>
+                            </div>
                         </div>
+                        <img class="service-img-pc" src=${serviceMain} alt="私たちについて" />
                     </div>
-                    <img class="service-img-pc" src=${serviceMain} alt="私たちについて" />
-                </div>
-            </section>
+                </section>
+            </div>
             <article>
                 <div class="article-container">
                     <div class="title-flex">
@@ -85,7 +87,7 @@ document.querySelector('#app').innerHTML = `
                             </div>
                             <figcaption>
                                 <p class="figcaption-title">お客様のニーズに合わせた内容でご対応します。</p>
-                                <p>お客様のお車の状態に必要な整備、必要でない整備内容を、判断させていただき、お見積りさせていただきます。<br>作業内容の説明、料金の説明、作業日数、メンテナンスのアドバイス説明をさせていただき、お客様に納得していただいたうえで、作業にかからせていただきます。</p>
+                                <p>お客様のお車の状態に必要な整備、必要でない整備内容を、判断させていただき、お見積りさせていただきます。作業内容の説明、料金の説明、作業日数、メンテナンスのアドバイス説明をさせていただき、お客様に納得していただいたうえで、作業にかからせていただきます。</p>
                             </figcaption>
                             </figure>
                         </div>

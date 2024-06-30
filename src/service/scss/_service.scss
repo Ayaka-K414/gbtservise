@@ -2,42 +2,69 @@
 @use '../../style/scss/setting/variable' as *;
 @use '../../style/scss/component/section-title' as *;
 @use '../../style/scss/component/section-subtitle' as *;
+@use '../../style/scss/component/bgc' as *;
 
 .service {
-    // padding: 0 11%;
-    background-color: $color--lightblue;
+    width: 1066px;
+    margin: 0 auto;
+    @include pc {
+        width: 100%;
+    }
+    @include tablet {
+        padding: 0 32px;
+    }
     .service-container {
         display: flex;
         align-items: center;
-        padding: 142px 11% 70px;
-        // margin: 0 auto;
+        justify-content: center;
+        padding-top: 142px;
+        @include tablet {
+            padding-top: 100px;
+        }
         div {
-            margin-right: 100px;
-            .section-subtitle {
-                padding-bottom: 70px;                
+            margin-right: 7%;
+            @include tablet {
+                margin-right: 34px;
             }
-            .service-img {
-                width: 496px;
-                height: 546px;
+            .section-subtitle {
+                padding-bottom: 70px;
+                @include tablet {
+                    padding-bottom: 40px;
+                }              
+            }
+            .service-img-sp {
+                display: none;
+                // @include sp {
+                //     display: block;
+                // }
             }
             .service-text {
                 width: 480px;
                 height: 216px;
                 font-size: 1.8rem;
                 line-height: 26px;
+                @include tablet {
+                    width: 272px;
+                }
                 p {
                     font-size: 1.8rem;
                     line-height: 2.6rem;
+                    @include tablet {
+                        font-size: 1.6rem;
+                        line-height: 23px;
+                    }
                 }
             }
         }
-        .service-img-sp {
-            display: none;
-        }
         .service-img-pc {
-            min-width: 490px;
-            min-height: 546px;
+            width: 490px;
+            height: 546px;
+            object-fit: cover;
             border-radius: 20px;
+            @include tablet {
+                // width: 400px;
+                height: 466px;
+            }
         }
     }
 }

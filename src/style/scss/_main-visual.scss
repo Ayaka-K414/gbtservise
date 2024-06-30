@@ -2,16 +2,19 @@
 @use '../scss/setting/variable' as *;
 
 .main-visual {
-    display: flex;
-    justify-content: center;
-    padding: 0 4.8% 36px 4.8%;
-    @include tablet {
-        display: block;
-        padding: 0px 16px;
-    }
-    @include sp {
-        padding: 0 5px 8px 5px;
-    }
+        display: flex;
+        justify-content: center;
+        padding: 0 4.8% 36px 4.8%;
+        @include pc {
+            padding: 0 16px 36px 16px;
+        }  
+        @include tablet {
+            display: block;
+            padding: 0px 16px;
+        }
+        @include sp {
+            padding: 0 5px 8px 5px;
+        }
     img {
         width: 954px;
         height: 577px;
@@ -19,13 +22,18 @@
         max-width: 68%;
         border: 1px solid #000;
         border-radius: 35px;
+        @include pc {
+            object-position: 20% 50%;
+        }
         @include tablet {
             display: inline;
             min-width: 100%;
             margin: 0 auto;
+            border-radius: 8px;
         }
         @include sp {
-            margin: 0 auto;
+            width: 100%;
+            height: 100%;
         }
     }
     div {
@@ -37,36 +45,17 @@
             display: block;
         }
         .text-container {
-            // color: $color--white;
-            // font-weight: 700;
-            // font-size: 5rem;
-            // line-height: 68px;
-            // -webkit-text-stroke: 5px #000;
-            // paint-order: stroke fill;
-            // text-shadow: 3px 3px 1px $color--green;
-            // margin: 71px 0 50px 20px;
-            // position: relative;
-            // padding-bottom: 24px;
-            // font-size: 5.0rem;
-            // font-weight: 700;
-            // line-height: 68px;
-            // color: $color--white;
-            // text-shadow: 2px 2px 1px $color--lightblue;
             position: relative;
             display: inline-block;
             padding: 80px 0 20px 24px;
-            font-size: 4rem;
+            font-size: 5rem;
             font-weight: 700;
             line-height: 60px;
-            color: #fff;
-            text-shadow: 1px 1px 0 #000,-1px 1px 0 #000,-1px -1px 0 #000,1px -1px 0 #000,2px 2px 0 $color--green;
+            color: #F4F4F4;
+            -webkit-text-stroke: 6px #000;
+            paint-order: stroke fill;
+            text-shadow: 2px 2px 0 $color--green;
             &::before {
-                // content: attr(data-text);
-                // position: absolute;
-                // top: 0;
-                // left: 0;
-                // color: transparent;
-                // -webkit-text-stroke: 5px #000;
                 content: attr(data-text);
                 position: absolute;
                 top: 0;
@@ -80,18 +69,6 @@
                 line-height: inherit;
                 padding: inherit;
             }
-            @include tablet {
-                margin: 0;
-                font-size: 4rem;
-                line-height: 54px;
-                padding-bottom: 27px;
-                text-shadow: 1px 1px 0 #000,-1px 1px 0 #000,-1px -1px 0 #000,1px -1px 0 #000;    
-            }
-            @include sp {
-                padding: 8px 0 14px 8px;
-                font-size: 2.4rem;
-                line-height: 32px;
-            }
             span::after {
                 content: "\A";
                 white-space: pre;
@@ -99,6 +76,28 @@
                     content: "";
                     white-space: none;
                 }
+            }
+            @include tablet {
+                display: none;
+            }
+        }
+        .text-container-tablet {
+            display: none;
+            @include tablet {
+                display: block;
+                font-size: 4rem;
+                line-height: 54px;
+                padding-bottom: 27px;
+                color: #F4F4F4;
+                -webkit-text-stroke: 4px #000;
+                paint-order: stroke fill;
+            }
+            @include sp {
+                font-size: 2.4rem;
+                line-height: 32px;
+                letter-spacing: 0.03em;
+                text-align: left;
+                -webkit-text-stroke: 3px #000;
             }
         }
         p {
@@ -108,9 +107,16 @@
             border: solid 1px #000;
             border-radius: 35px;
             background-color: $color--green;
-            text-align: center;
+            text-align: left;
             margin-left:20px;
-            padding: 10px;
+            padding: 10px 20px 24px 20px;
+            -webkit-text-stroke: 4px $color--white;
+            paint-order: stroke fill;
+            @include pc {
+                border-radius: 20px;
+                font-size: 4.0rem;
+                padding: 20px 15px;
+            }
             @include tablet {
                 width: 480px;
                 height: 50px;
@@ -121,6 +127,8 @@
                 border-radius: 8px;
                 position: relative;
                 z-index: 1;
+                text-align: center;
+                -webkit-text-stroke: 2px $color--white;
             }
             @include sp {
                 width: 262px;
