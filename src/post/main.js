@@ -76,7 +76,7 @@ document.querySelector('#app').innerHTML = `
             </article>
         </main>
         <footer>
-            <div class="footer-high">
+            <div class="footer-high" id="white">
             <ul class="footer-high-links">
                 <li>
                 <a href="">

@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function() {
     const textContainer = document.getElementById("textContainer");
-    var text = textContainer.innerHTML.replace(/<br\s*\/?>/gi, '\n'); // Replace <br> tags with newline characters
+    let text = textContainer.innerHTML.replace(/<br\s*\/?>/gi, '\n');
     textContainer.setAttribute('data-text', text);
 });

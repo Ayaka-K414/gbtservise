@@ -3,16 +3,26 @@
 // ==================================================================================
 $sp: 768px;
 $tablet: 1024px;
+$pc: 1440px;
 
 
+// 768以下
 @mixin sp {
     @media screen and (max-width: $sp){
         @content;
     }
 }
 
+// 1024以下
 @mixin tablet {
     @media screen and (max-width: $tablet){
+        @content;
+    }
+}
+
+// 1440以下
+@mixin pc {
+    @media screen and (max-width: $pc){
         @content;
     }
 }

@@ -3,7 +3,7 @@ import '../style/css/aboutus.css';
 import logo from '../public/logo.png';
 import insta from '../public/instagram.png';
 import hamburger from '../public/top/hamburger-button.png';
-import aboutusMain from '../public/aboutus/aboutus-main.png'
+import aboutusMain from '../public/aboutus/aboutus-main.jpg';
 
 document.querySelector('#app').innerHTML = `
     <div>
@@ -26,8 +26,7 @@ document.querySelector('#app').innerHTML = `
                 <div class="about-us-container">
                     <h2 class="section-title">About us</h2>
                     <p class="section-subtitle">・私たちについて・</p>
-                    <div class="about-us-img-container">
-                    </div>
+                    <div class="about-us-img-container"></div>
                     <div class="about-us-text">
                         <h3>カーライフをもっと楽しく。</h3>
                         <p class="text-large">私たちGBTサービスが大切にしていることは、<br>車と一緒に、より豊かで楽しい日常をお客様に届けるということ。</p>
@@ -67,69 +66,72 @@ document.querySelector('#app').innerHTML = `
                     </div>
                 </div>
             </section>
-            <section class="contact">
-                <h2 class="section-title">Contact</h2>
-                <p class="section-subtitle">・お問い合わせ・</p>
-                <div class="contact-info-container">
-                    <dl>
-                        <div><dt>お電話でお問い合わせ</dt><dd>0564-31-7273</dd></div>
-                        <div><dt>メールでお問い合わせ</dt><dd>poccharihoney@gmail.com</dd></div>
-                        <div><dt>インスタDM</dt><dd>gbtservice</dd></div>
-                    </dl>
-                </div>
-                <div class="insta-background-bottom"></div>
-                <div class="bg"></div>
-            </section>
+            <div class="bgc-white">
+                <div class="contact-bg-top"></div>
+                <section class="contact">
+                    <h2 class="section-title">Contact</h2>
+                    <p class="section-subtitle">・お問い合わせ・</p>
+                    <div class="contact-info-container">
+                        <dl>
+                            <div><dt>お電話でお問い合わせ</dt><dd>0564-31-7273</dd></div>
+                            <div><dt>メールでお問い合わせ</dt><dd>poccharihoney@gmail.com</dd></div>
+                            <div><dt>インスタDM</dt><dd>gbtservice</dd></div>
+                        </dl>
+                    </div>
+                </section>
+                <div class="contact-bg-bottom"></div>
+                <div class="bgc-beige"></div>
+            </div>
         </main>
         <footer>
-            <div class="footer-high">
-            <ul class="footer-high-links">
-                <li>
-                <a href="">
-                    <p class="list-title">Stock List</p>
-                    <p class="text">在庫車両をご覧になりたい方はこちら</p>
-                </a>
-                </li>
-                <li>
-                <a href="">
-                    <p class="list-title">Feature</p>
-                    <p class="text">「バナナフィガロ」の特集サイトへ</p>
-                </a>
-                </li>
-            </ul>
+            <div class="footer-high" id="beige">
+                <ul class="footer-high-links">
+                    <li>
+                    <a href="">
+                        <p class="list-title">Stock List</p>
+                        <p class="text">在庫車両をご覧になりたい方はこちら</p>
+                    </a>
+                    </li>
+                    <li>
+                    <a href="">
+                        <p class="list-title">Feature</p>
+                        <p class="text">「バナナフィガロ」の特集サイトへ</p>
+                    </a>
+                    </li>
+                </ul>
             </div>
             <div class="footer-low">
-            <div class="footer-flex-left">
-                <img class="logo" src=${logo} alt="GTBサービスのロゴ"/>
-                <address>
-                <p class="address">〒444-0951<br>岡崎市北野町字一番訳5番地1<br><span class="tel-icon"></span>0564-31-7273</p>
-                </address>
-            </div>
-            <div class="footer-flex-right">
-                <ul class="footer-low-links">
-                <li>
-                    <a href="">私たちについて</a>
-                    <ul>
-                    <li class="under-pages-links"><a href="">会社案内</a></li>
-                    <li class="under-pages-links"><a href="">アクセス</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="">事業案内</a>
-                    <ul>
-                    <li class="under-pages-links"><a href="">鈑金・塗装</a></li>
-                    <li class="under-pages-links"><a href="">整備・車検</a></li>
-                    <li class="under-pages-links"><a href="">新車・中古車販売</a></li>
-                    <li class="under-pages-links"><a href="">カスタムペイント</a></li>
-                    </ul>
-                </li>
-                <li><a href="">施工実績</a></li>
-                <li><a href="">お問い合わせ</a></li>
-                </ul>
-                <div class="instagram-link-container">
-                <p class="instagram-link"><a href="">Follow us<span class="arrow"></span></a></p>
+                <div class="footer-flex-left">
+                    <img class="logo" src=${logo} alt="GTBサービスのロゴ"/>
+                    <address>
+                        <p class="address">〒444-0951<br>岡崎市北野町字一番訳5番地1<br><span class="tel-icon"></span>0564-31-7273</p>
+                    </address>
                 </div>
-            </div>
+                <div class="footer-flex-right">
+                    <ul class="footer-low-links">
+                    <li>
+                        <a href="">私たちについて</a>
+                        <ul>
+                        <li class="under-pages-links"><a href="">会社案内</a></li>
+                        <li class="under-pages-links"><a href="">アクセス</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="">事業案内</a>
+                        <ul>
+                        <li class="under-pages-links"><a href="">鈑金・塗装</a></li>
+                        <li class="under-pages-links"><a href="">整備・車検</a></li>
+                        <li class="under-pages-links"><a href="">新車・中古車販売</a></li>
+                        <li class="under-pages-links"><a href="">カスタムペイント</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">施工実績</a></li>
+                    <li><a href="">お問い合わせ</a></li>
+                    </ul>
+                    <div class="instagram-link-container">
+                    <p class="instagram-link"><a href="">Follow us<span class="arrow"></span></a></p>
+                    </div>
+                </div>
             </div>
             <p class="copyright">&copy;2024 GBT service All Rights Reserved.</p>
         </footer>
