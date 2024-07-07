@@ -10,27 +10,18 @@ main {
 .about-us {
     width: 1168px;
     margin: 0 auto;
+    padding: 100px 0 155px 0;
     @include pc {
         width: 100%;
-        padding: 0 16px;
+        padding: 100px 16px 155px;
     }
     @include tablet {
-        padding: 0 32px;
+        padding: 50px 32px 155px;
+    }
+    @include sp {
+        padding: 40px 12px 80px;
     }
     .about-us-container {
-        padding: 100px 0 150px 0;
-        @include tablet {
-            padding: 50px 0;
-        }
-        .section-title{
-            @include sp {
-                font-size: 4.0rem;
-                line-height: 40px;
-            }
-        }
-        .section-subtitle {
-            padding-bottom: 20px;
-        }
         .about-us-img-container {
             background-image: url(../../public/aboutus/aboutus-main.jpg);
             width: 1377px;
@@ -38,19 +29,24 @@ main {
             border: 1px solid #000;
             border-radius: 50%;
             margin-left: 20%;
-            // transition: margin-left 0.1s ease;
             margin-top: -50px;
             overflow: hidden;
-            background-size: 1377px auto;
-            background-position: 80% 60%;
+            background-size: 115%;
+            background-position: 70% 65%;
             @include pc {
                 margin-left: 5%;
-                // transition: margin-left 0.1s ease;
             }
             @include tablet {
                 width: 1004px;
                 height: 350px;
-                margin-left: 16px;
+                margin: 16px;
+                background-size: 120%;
+                background-position: 80% 65%;
+            }
+            @include sp {
+                width: 516px;
+                height: 180px;
+                margin: -20px auto 12px;
             }
         }
         .about-us-text {
@@ -65,7 +61,13 @@ main {
                     font-size: 3.2rem;
                     line-height: 46px;
                     letter-spacing: -0.02em;
-                }          
+                } 
+                @include sp {
+                    font-size: 2.2rem;
+                    line-height: 31.86px;
+                    letter-spacing: -0.02em;
+                    text-align: left;
+                }         
             }
             .text-large {
                 font-size: 2.0rem;
@@ -76,6 +78,11 @@ main {
                     line-height: 26px;
                     padding: 20px 0;
                 }
+                @include sp {
+                    font-size: 1.6rem;
+                    line-height: 23.17px;
+                    text-align: left;
+                }
             }
             .text-small {
                 font-size: 1.8rem;
@@ -83,6 +90,11 @@ main {
                 @include tablet {
                     font-size: 1.6rem;
                     line-height: 23px;
+                }
+                @include sp {
+                    font-size: 1.4rem;
+                    line-height: 20.27px;
+                    text-align: left;
                 }
             }
         }

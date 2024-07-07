@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html {
   font-family: "Noto Sans JP", sans-serif;
   font-size: 62.5%;
@@ -84,16 +85,130 @@ header nav .list-contact::after {
 header nav .insta {
   padding-right: 0;
 }
-header .hamburger {
+header .hamburger-button {
   display: none;
 }
 @media screen and (max-width: 1024px) {
-  header .hamburger {
+  header .hamburger-button {
     display: block;
   }
-  header .hamburger img {
+  header .hamburger-button .hamburger-icon {
     width: 48px;
     height: 48px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  header .hamburger.is-active {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  header.is-active {
+    display: none;
+  }
+}
+
+.menu {
+  display: none;
+}
+.menu .text-align-right {
+  text-align: right;
+}
+.menu .text-align-right .close-button {
+  display: none;
+}
+@media screen and (max-width: 1024px) {
+  .menu .text-align-right .close-button.is-active {
+    display: inline-flex;
+    text-align: right;
+  }
+  .menu .text-align-right .close-button.is-active .close-icon {
+    display: inline-block;
+    width: 48px;
+    height: 48px;
+    margin: 42px 25px 0 0;
+  }
+}
+@media screen and (max-width: 768px) {
+  .menu .text-align-right .close-button.is-active .close-icon {
+    margin: 22px 18px 0 0;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .menu.is-active {
+    position: relative;
+    z-index: 10;
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    background-color: #FAF2EB;
+  }
+  .menu.is-active .menu-list {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding: 20px 25px 0 80px;
+  }
+  .menu.is-active .menu-list ul {
+    background-color: #FAF2EB;
+  }
+  .menu.is-active .menu-list ul li {
+    width: 355px;
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0.01em;
+    text-align: left;
+    padding: 18px 0;
+    border-bottom: 1px solid #A2A2A2;
+  }
+  .menu.is-active .menu-list ul li a span {
+    display: block;
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 21.72px;
+    text-align: left;
+  }
+  .menu.is-active .menu-list ul .icon {
+    display: flex;
+    align-items: center;
+  }
+  .menu.is-active .menu-list ul .icon::before {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url("../../public/new-window-icon.png");
+    background-size: contain;
+    vertical-align: middle;
+    margin-right: 13px;
+  }
+  .menu.is-active .menu-list ul .icon-insta {
+    display: flex;
+    align-items: center;
+  }
+  .menu.is-active .menu-list ul .icon-insta::before {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url("../../public/instagram.png");
+    background-size: contain;
+    vertical-align: middle;
+    margin-right: 13px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .menu.is-active .menu-list {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0 0 0;
+  }
+  .menu.is-active .menu-list .logo {
+    padding-top: 24px;
   }
 }
 
@@ -166,9 +281,8 @@ header .hamburger {
   font-weight: 700;
   line-height: 60px;
   color: #F4F4F4;
-  -webkit-text-stroke: 6px #000;
+  -webkit-text-stroke: 5px #000;
   paint-order: stroke fill;
-  text-shadow: 2px 2px 0 #AAF2D1;
 }
 .main-visual div .text-container::before {
   content: attr(data-text);
@@ -183,6 +297,7 @@ header .hamburger {
   font-weight: inherit;
   line-height: inherit;
   padding: inherit;
+  text-shadow: 3px 3px 1px #AAF2D1; /* 緑のシャドウ */
 }
 .main-visual div .text-container span::after {
   content: "\a";
@@ -377,9 +492,14 @@ header .hamburger {
   font-size: 2rem;
   background-color: #F4F4F4;
 }
-.about-us .about-us-container div .about-us-text .about-us-link-container .about-us-link:hover {
+.about-us .about-us-container div .about-us-text .about-us-link-container .about-us-link:hover .text {
   text-shadow: 2px 2px #FEEF44;
   border-bottom: 1px solid #000;
+  transition: all 0.3s ease-out;
+}
+.about-us .about-us-container div .about-us-text .about-us-link-container .about-us-link:hover .arrow {
+  border: 1px solid #000;
+  background-color: #FEEF44;
   transition: all 0.3s ease-out;
 }
 .about-us .about-us-container .about-us-img-pc {
@@ -393,16 +513,11 @@ header .hamburger {
     display: none;
   }
 }
-@media screen and (max-width: 768px) {
-  .about-us .about-us-container .kari {
-    width: 90vw;
-  }
-}
-.about-us .about-us-container .kari .about-us-img-tab {
+.about-us .about-us-container .about-us-img-tablet .about-us-img-tab {
   display: none;
 }
 @media screen and (max-width: 1024px) {
-  .about-us .about-us-container .kari .about-us-img-tab {
+  .about-us .about-us-container .about-us-img-tablet .about-us-img-tab {
     display: block;
     width: 684px;
     height: 420px;
@@ -413,11 +528,10 @@ header .hamburger {
   }
 }
 @media screen and (max-width: 768px) {
-  .about-us .about-us-container .kari .about-us-img-tab {
+  .about-us .about-us-container .about-us-img-tablet .about-us-img-tab {
     width: 488px;
     height: 300px;
-    margin-top: -40px;
-    margin-left: 10%;
+    margin: -40px auto 0;
   }
 }
 .about-us .feature {
@@ -641,6 +755,20 @@ header .hamburger {
     border-radius: 8px 8px 0 0;
   }
 }
+.service .card-container figure .card-img1 {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 35% 0;
+     object-position: 35% 0;
+}
+.service .card-container figure .card-img3 {
+  -o-object-position: 0 0;
+     object-position: 0 0;
+}
+.service .card-container figure .card-img4 {
+  -o-object-position: 0 100%;
+     object-position: 0 100%;
+}
 .service .card-container figure figcaption {
   display: inline-block;
   font-size: 2.4rem;
@@ -709,9 +837,14 @@ header .hamburger {
   font-size: 2rem;
   background-color: #F4F4F4;
 }
-.works .flex-container .works-link-container .works-link:hover {
+.works .flex-container .works-link-container .works-link:hover .text {
   text-shadow: 2px 2px #FEEF44;
   border-bottom: 1px solid #000;
+  transition: all 0.3s ease-out;
+}
+.works .flex-container .works-link-container .works-link:hover .arrow {
+  border: 1px solid #000;
+  background-color: #FEEF44;
   transition: all 0.3s ease-out;
 }
 @media screen and (max-width: 1024px) {
@@ -959,9 +1092,48 @@ header .hamburger {
     margin-top: -120px;
   }
 }
-.instagram .section-title {
-  text-shadow: 2px 2px 0 #000, -2px 2px 0 #000, -2px -2px 0 #000, 2px -2px 0 #000, 5px 5px 0 #AAF2D1;
+.instagram .section-title-shadow {
   text-align: center;
+  font-size: 10rem;
+  font-weight: 700;
+  line-height: 86px;
+  position: relative;
+}
+@media screen and (max-width: 1024px) {
+  .instagram .section-title-shadow {
+    font-size: 7rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .instagram .section-title-shadow {
+    font-size: 4rem;
+  }
+}
+.instagram .section-title-shadow::before {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  color: #FFFFFF;
+  -webkit-text-stroke: 3px black;
+  text-shadow: 4px 4px 2px #AAF2D1; /* 緑のシャドウ */
+  font-size: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+  padding: inherit;
+}
+@media screen and (max-width: 1024px) {
+  .instagram .section-title-shadow::before {
+    font-size: 7rem;
+    -webkit-text-stroke: 2px black;
+    text-shadow: 3px 3px 1px #AAF2D1; /* 緑のシャドウ */
+  }
+}
+@media screen and (max-width: 768px) {
+  .instagram .section-title-shadow::before {
+    font-size: 4rem;
+    -webkit-text-stroke: 2px black;
+    text-shadow: 3px 3px 1px #AAF2D1; /* 緑のシャドウ */
+  }
 }
 .instagram .instagram-link-container {
   display: flex;
@@ -1376,6 +1548,11 @@ footer .copyright {
 @media screen and (max-width: 1024px) {
   .bgc-lightblue {
     padding-bottom: 120px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .bgc-lightblue {
+    padding-bottom: 80px;
   }
 }
 

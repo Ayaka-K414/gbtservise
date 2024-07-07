@@ -1,8 +1,9 @@
 import '../style/css/ress.css';
 import '../style/css/works.css';
-import logo from '../public/logo.png';
+import logo from '../public/logo.svg';
 import insta from '../public/instagram.png';
 import hamburger from '../public/top/hamburger-button.png';
+import close from '/close-button.png';
 import archive01 from '../public/works/archive01.jpg';
 import archive02 from '../public/works/archive02.jpg';
 import archive03 from '../public/works/archive03.jpg';
@@ -21,19 +22,37 @@ import archive12 from '../public/works/archive12.jpg';
 document.querySelector('#app').innerHTML = `
     <div>
         <header>
-        <a href="#"><img class="logo" src=${logo} alt="GTBサービスのロゴ" /></a>
-        <nav>
-            <li><a href="">私たちについて</a></li>
-            <li><a href="">事業案内</a></li>
-            <li><a href="">アクセス</a></li>
-            <li><a href="">施工実績</a></li>
-            <li class="list-contact"><a href="">お問い合わせ</a></li>
-            <li class="insta"><a href=""><img src=${insta} art="Instagramアイコン"></a></li>
-        </nav>
-        <button class="hamburger">
-            <img src="${hamburger}" alt="ハンバーアイコン" />
-        </button>
+            <a href="#"><img class="logo" src=${logo} alt="GTBサービスのロゴ" /></a>
+            <nav>
+                <li><a href="">私たちについて</a></li>
+                <li><a href="">事業案内</a></li>
+                <li><a href="">アクセス</a></li>
+                <li><a href="">施工実績</a></li>
+                <li class="list-contact"><a href="">お問い合わせ</a></li>
+                <li class="insta"><a href=""><img src=${insta} art="Instagramアイコン"></a></li>
+            </nav>
+            <button class="hamburger-button" id="hamburger-button">
+                <img class="hamburger-icon" src="${hamburger}" alt="ハンバーガーメニュー" />
+            </button>
         </header>
+        <div class="menu" id="hamburger-menu">
+            <div class="text-align-right">
+                <button class="close-button" id="close-button" >
+                <img class="close-icon" src="${close}" alt="閉じる" />
+                </button>
+            </div>
+            <div class="menu-list">
+                <ul>
+                <li><a href="">About us<span>私たちについて</span></a></li>
+                <li><a href="">Service<span>事業案内</span></a></li>
+                <li><a href="">Works<span>施工実績</span></a></li>
+                <li class="icon"><a href="">Stock List<span>在庫車両掲載サイト</span></a></li>
+                <li class="icon"><a href="">Feature<span>当社カスタム「バナナフィガロ」特集サイト</span></a></li>
+                <li class="icon-insta"><a href="">Instagram<span>インスタグラム</span></a></li>
+                </ul>
+                <img class="logo" src=${logo} alt="GTBサービスのロゴ" />
+            </div>
+        </div>
         <main>
             <section class="works">
                 <h2 class="section-title">Works</h2>

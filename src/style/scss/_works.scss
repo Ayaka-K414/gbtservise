@@ -43,9 +43,14 @@
                     background-color: #F4F4F4;
                 }
             }
-            .works-link:hover {
+            .works-link:hover .text {
                 text-shadow: 2px 2px $color--yellow;
                 border-bottom: 1px solid #000;
+                transition: all 0.3s ease-out;
+            }
+            .works-link:hover .arrow {
+                border: 1px solid #000;
+                background-color: $color--yellow;
                 transition: all 0.3s ease-out;
             }
             @include tablet {

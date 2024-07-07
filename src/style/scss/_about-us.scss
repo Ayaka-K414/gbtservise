@@ -81,11 +81,16 @@
                             background-color: #F4F4F4;  
                         }
                     }
-                    .about-us-link:hover {
+                    .about-us-link:hover .text {
                         text-shadow: 2px 2px $color--yellow;
                         border-bottom: 1px solid #000;
                         transition: all 0.3s ease-out;
                     }
+                    .about-us-link:hover .arrow {
+                        border: 1px solid #000;
+                        background-color: $color--yellow;
+                        transition: all 0.3s ease-out;
+                    }                    
                 }
             }
         }
@@ -98,10 +103,7 @@
                 display: none;
             }
         }
-        .kari {
-            @include sp {
-                width: 90vw;
-            }
+        .about-us-img-tablet {
             .about-us-img-tab {
                 display: none;
                 @include tablet {
@@ -116,8 +118,7 @@
                 @include sp {
                     width: 488px;
                     height: 300px;
-                    margin-top: -40px;
-                    margin-left: 10%;
+                    margin: -40px auto 0;
                     // object-position: 0 0;効かない
                 }
             }

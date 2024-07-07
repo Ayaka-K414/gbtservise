@@ -94,6 +94,21 @@
                     border-radius: 8px 8px 0 0;
                 }
             }
+            .card-img1 {
+                object-fit: cover;
+                object-position: 35% 0;
+            }
+            // .card-img2 {
+            //     object-position: left;
+            //     zoom: 120%;
+            //     object-fit: contain;
+            // }
+            .card-img3 {
+                object-position: 0 0;
+            }
+            .card-img4 {
+                object-position: 0 100%;
+            }
             figcaption {
                 display: inline-block;
                 font-size: 2.4rem;

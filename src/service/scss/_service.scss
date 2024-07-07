@@ -7,36 +7,52 @@
 .service {
     width: 1066px;
     margin: 0 auto;
+    padding-top: 110px;
     @include pc {
         width: 100%;
     }
     @include tablet {
-        padding: 0 32px;
+        padding: 110px 32px 0;
+    }
+    @include sp {
+        padding: 0 12px;
     }
     .service-container {
         display: flex;
         align-items: center;
         justify-content: center;
-        padding-top: 142px;
         @include tablet {
-            padding-top: 100px;
+            align-items: flex-start;
+        }
+        @include sp {
+            display: block;
         }
         div {
             margin-right: 7%;
             @include tablet {
                 margin-right: 34px;
             }
+            @include sp {
+                margin: 0;
+            }
             .section-subtitle {
                 padding-bottom: 70px;
                 @include tablet {
                     padding-bottom: 40px;
-                }              
+                }
+                @include sp {
+                    padding-bottom: 20px;
+                }            
             }
             .service-img-sp {
                 display: none;
-                // @include sp {
-                //     display: block;
-                // }
+                @include sp {
+                    display: block;
+                    width: 280px;
+                    height: 261px;
+                    border-radius: 8px;
+                    margin: 0 auto;
+                }
             }
             .service-text {
                 width: 480px;
@@ -45,6 +61,10 @@
                 line-height: 26px;
                 @include tablet {
                     width: 272px;
+                }
+                @include sp {
+                    width: 100%;
+                    padding-top: 20px;
                 }
                 p {
                     font-size: 1.8rem;
@@ -64,6 +84,9 @@
             @include tablet {
                 // width: 400px;
                 height: 466px;
+            }
+            @include sp {
+                display: none;
             }
         }
     }

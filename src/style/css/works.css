@@ -84,16 +84,130 @@ header nav .list-contact::after {
 header nav .insta {
   padding-right: 0;
 }
-header .hamburger {
+header .hamburger-button {
   display: none;
 }
 @media screen and (max-width: 1024px) {
-  header .hamburger {
+  header .hamburger-button {
     display: block;
   }
-  header .hamburger img {
+  header .hamburger-button .hamburger-icon {
     width: 48px;
     height: 48px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  header .hamburger.is-active {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  header.is-active {
+    display: none;
+  }
+}
+
+.menu {
+  display: none;
+}
+.menu .text-align-right {
+  text-align: right;
+}
+.menu .text-align-right .close-button {
+  display: none;
+}
+@media screen and (max-width: 1024px) {
+  .menu .text-align-right .close-button.is-active {
+    display: inline-flex;
+    text-align: right;
+  }
+  .menu .text-align-right .close-button.is-active .close-icon {
+    display: inline-block;
+    width: 48px;
+    height: 48px;
+    margin: 42px 25px 0 0;
+  }
+}
+@media screen and (max-width: 768px) {
+  .menu .text-align-right .close-button.is-active .close-icon {
+    margin: 22px 18px 0 0;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .menu.is-active {
+    position: relative;
+    z-index: 10;
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    background-color: #FAF2EB;
+  }
+  .menu.is-active .menu-list {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding: 20px 25px 0 80px;
+  }
+  .menu.is-active .menu-list ul {
+    background-color: #FAF2EB;
+  }
+  .menu.is-active .menu-list ul li {
+    width: 355px;
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0.01em;
+    text-align: left;
+    padding: 18px 0;
+    border-bottom: 1px solid #A2A2A2;
+  }
+  .menu.is-active .menu-list ul li a span {
+    display: block;
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 21.72px;
+    text-align: left;
+  }
+  .menu.is-active .menu-list ul .icon {
+    display: flex;
+    align-items: center;
+  }
+  .menu.is-active .menu-list ul .icon::before {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url("../../public/new-window-icon.png");
+    background-size: contain;
+    vertical-align: middle;
+    margin-right: 13px;
+  }
+  .menu.is-active .menu-list ul .icon-insta {
+    display: flex;
+    align-items: center;
+  }
+  .menu.is-active .menu-list ul .icon-insta::before {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url("../../public/instagram.png");
+    background-size: contain;
+    vertical-align: middle;
+    margin-right: 13px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .menu.is-active .menu-list {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0 0 0;
+  }
+  .menu.is-active .menu-list .logo {
+    padding-top: 24px;
   }
 }
 
@@ -112,6 +226,11 @@ footer .footer-high-links {
   justify-content: center;
   align-items: center;
 }
+@media screen and (max-width: 768px) {
+  footer .footer-high-links {
+    flex-direction: column;
+  }
+}
 footer .footer-high-links li {
   background-color: #FFFFFF;
   width: 360px;
@@ -121,6 +240,12 @@ footer .footer-high-links li {
 @media screen and (max-width: 1024px) {
   footer .footer-high-links li {
     width: 310px;
+    height: 60px;
+  }
+}
+@media screen and (max-width: 768px) {
+  footer .footer-high-links li {
+    width: 360px;
     height: 60px;
   }
 }
@@ -184,6 +309,12 @@ footer .footer-high-links li:first-of-type {
     margin-right: 12px;
   }
 }
+@media screen and (max-width: 768px) {
+  footer .footer-high-links li:first-of-type {
+    margin-right: 0;
+    margin-bottom: 12px;
+  }
+}
 footer .footer-high-links li:last-of-type {
   border-radius: 0px 20px 20px 0px;
   border-left: none;
@@ -243,11 +374,13 @@ footer .footer-low-links {
     display: none;
   }
 }
+footer .footer-low-links li {
+  padding: 6px 0;
+}
 footer .footer-low-links li a {
   font-size: 1.6rem;
   font-weight: 700;
   line-height: 23px;
-  padding: 6px 0;
 }
 footer .footer-low-links li ul .under-pages-links a {
   font-size: 1.4rem;
@@ -310,7 +443,7 @@ footer .copyright {
 
 .section-title {
   color: #fff;
-  -webkit-text-stroke: 6px #000;
+  -webkit-text-stroke: 7px #000;
   paint-order: stroke fill;
   font-size: 10rem;
   font-weight: 700;
@@ -325,16 +458,34 @@ footer .copyright {
     padding-bottom: 8px;
   }
 }
+@media screen and (max-width: 768px) {
+  .section-title {
+    font-size: 4rem;
+    line-height: 40px;
+    letter-spacing: 0.03em;
+    padding-bottom: 4px;
+    text-align: left;
+  }
+}
 
 .section-subtitle {
   font-size: 2.6rem;
   font-weight: 500;
   line-height: 37px;
+  padding-bottom: 36px;
 }
 @media screen and (max-width: 1024px) {
   .section-subtitle {
     font-size: 2rem;
     line-height: 28px;
+    padding-bottom: 20px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .section-subtitle {
+    font-size: 1.2rem;
+    line-height: 17.38px;
+    text-align: left;
   }
 }
 
@@ -354,6 +505,11 @@ main .works {
 @media screen and (max-width: 1024px) {
   main .works {
     padding: 50px 32px;
+  }
+}
+@media screen and (max-width: 768px) {
+  main .works {
+    padding: 40px 12px;
   }
 }
 main .works .section-subtitle {
@@ -379,6 +535,13 @@ main .works .card-container {
     padding-top: 0px;
   }
 }
+@media screen and (max-width: 768px) {
+  main .works .card-container {
+    flex-direction: column;
+    margin: 0 auto;
+    width: 100%;
+  }
+}
 main .works .card-container figure {
   width: 332px;
   height: 422px;
@@ -398,6 +561,11 @@ main .works .card-container figure {
     margin-right: 30px;
   }
 }
+@media screen and (max-width: 768px) {
+  main .works .card-container figure {
+    margin: 0 0 30px 0;
+  }
+}
 main .works .card-container figure:hover {
   background-color: #FEEF44;
   transition: all 0.3s ease-out;
@@ -408,6 +576,11 @@ main .works .card-container figure:nth-of-type(3n) {
 @media screen and (max-width: 1024px) {
   main .works .card-container figure:nth-of-type(3n) {
     margin-right: 30px;
+  }
+}
+@media screen and (max-width: 768px) {
+  main .works .card-container figure:nth-of-type(3n) {
+    margin: 0 0 30px 0;
   }
 }
 @media screen and (max-width: 1024px) {

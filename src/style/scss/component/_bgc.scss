@@ -7,6 +7,9 @@
     @include tablet {
         padding-bottom: 120px;
     }
+    @include sp {
+        padding-bottom: 80px;
+    }
 }
 
 .bgc-white {

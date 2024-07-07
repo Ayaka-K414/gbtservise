@@ -11,6 +11,10 @@ article {
     @include tablet {
         width: 695px;
     }
+    @include sp {
+        padding: 50px 12px 50px;
+        width: 100%;
+    }
     .title {
         padding-bottom: 50px;
         padding-left: 66px;
@@ -43,7 +47,7 @@ article {
             font-size: 1.6rem;
             line-height: 23px;
             text-align: center;
-            background-color: $color--lightblue;
+            background-color: $color--green;
         }
         .title-text {
             font-size: 2.4rem;
@@ -52,6 +56,10 @@ article {
         }
     }
     .img-container {
+        @include sp {
+            width: 360px;
+            margin: 0 auto;
+        }
         .img-contents {
             display: flex;
             justify-content: center;
@@ -85,6 +93,11 @@ article {
                 }
             }
             .before-img ,.after-img {
+                @include sp {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                }        
                 img {
                     width: 420px;
                     height: 420px;
@@ -95,12 +108,17 @@ article {
                         width: 335px;
                         height: 335px;
                     }
+                    @include sp {
+                        margin-right: 0;
+                        margin-bottom: 8px;
+                    }
                 }
                 img:last-of-type {
                     margin-right: 0;
                 }
             }
             .process-img {
+                text-align: center;
                 img {
                     width: 276px;
                     height: 276px;
@@ -111,6 +129,11 @@ article {
                         width: 220px;
                         height: 220px;
                         margin-right: 15px;
+                    }
+                    @include sp {
+                        width: 108px;
+                        height: 108px;
+                        margin-right: 5px;
                     }
                 }
                 img:last-of-type {
@@ -125,6 +148,10 @@ article {
         @include tablet {
             width: 690px;
             padding: 0;
+        }
+        @include sp {
+            padding: 0 10px;
+            width: 100%;
         }
         p {
             font-size: 1.6rem;
@@ -146,7 +173,15 @@ article {
             width: 690px;
             padding: 80px 0;
         }
-        .prev::before {
+        @include sp {
+            width: 100%;
+        }
+        .prev {
+            @include sp {
+                display: none;
+            }
+        }
+        .prev-arrow::before {
             content: "";
             background-image: url(../../public/prev.png);
             background-size: contain;
@@ -157,7 +192,7 @@ article {
             margin-right: 10px;
             transition: background-image 0.3s ease-out;
         }
-        .prev:hover::before {
+        .prev-arrow:hover::before {
             background-image: url(../../public/prev-hover.png);
         }
         .list {
@@ -170,7 +205,12 @@ article {
             color: $color--white;
             transition: all 0.3s ease-out;
         }
-        .next::after {
+        .next {
+            @include sp {
+                display: none;
+            }
+        }
+        .next-arrow::after {
             content: "";
             background-image: url(../../public/next.png);
             background-size: contain;
@@ -181,7 +221,7 @@ article {
             margin-left: 10px;
             transition: background-image 0.3s ease-out;
         }
-        .next:hover::after {
+        .next-arrow:hover::after {
             background-image: url(../../public/next-hover.png);
         }
 

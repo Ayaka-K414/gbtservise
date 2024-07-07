@@ -1,26 +1,45 @@
 import '../style/css/ress.css';
 import '../style/css/aboutus.css';
-import logo from '../public/logo.png';
+import logo from '../public/logo.svg';
 import insta from '../public/instagram.png';
 import hamburger from '../public/top/hamburger-button.png';
+import close from '../public/close-button.png';
 import aboutusMain from '../public/aboutus/aboutus-main.jpg';
 
 document.querySelector('#app').innerHTML = `
     <div>
         <header>
-        <a href="#"><img class="logo" src=${logo} alt="GTBサービスのロゴ" /></a>
-        <nav>
-            <li><a href="">私たちについて</a></li>
-            <li><a href="">事業案内</a></li>
-            <li><a href="">アクセス</a></li>
-            <li><a href="">施工実績</a></li>
-            <li class="list-contact"><a href="">お問い合わせ</a></li>
-            <li class="insta"><a href=""><img src=${insta} art="Instagramアイコン"></a></li>
-        </nav>
-        <button class="hamburger">
-            <img src="${hamburger}" alt="ハンバーアイコン" />
-        </button>
+            <a href="#"><img class="logo" src=${logo} alt="GTBサービスのロゴ" /></a>
+            <nav>
+                <li><a href="">私たちについて</a></li>
+                <li><a href="">事業案内</a></li>
+                <li><a href="">アクセス</a></li>
+                <li><a href="">施工実績</a></li>
+                <li class="list-contact"><a href="">お問い合わせ</a></li>
+                <li class="insta"><a href=""><img src=${insta} art="Instagramアイコン"></a></li>
+            </nav>
+            <button class="hamburger-button" id="hamburger-button">
+                <img class="hamburger-icon" src="${hamburger}" alt="ハンバーガーメニュー" />
+            </button>
         </header>
+        <div class="menu" id="hamburger-menu">
+            <div class="text-align-right">
+                <button class="close-button" id="close-button" >
+                    <img class="close-icon" src="${close}" alt="閉じる" />
+                </button>
+            </div>
+            <div class="menu-list">
+                <ul>
+                    <li><a href="">About us<span>私たちについて</span></a></li>
+                    <li><a href="">Service<span>事業案内</span></a></li>
+                    <li><a href="">Works<span>施工実績</span></a></li>
+                    <li class="icon"><a href="">Stock List<span>在庫車両掲載サイト</span></a></li>
+                    <li class="icon"><a href="">Feature<span>当社カスタム「バナナフィガロ」特集サイト</span></a></li>
+                    <li class="icon-insta"><a href="">Instagram<span>インスタグラム</span></a></li>
+                </ul>
+                <img class="logo" src=${logo} alt="GTBサービスのロゴ" />
+            </div>
+        </div>
         <main>
             <section class="about-us">
                 <div class="about-us-container">
@@ -39,12 +58,12 @@ document.querySelector('#app').innerHTML = `
                     <h2 class="section-title">Company</h2>
                     <p class="section-subtitle">・会社案内・</p>
                     <dl>
-                        <div><dt>会社名</dt><dd>GBTサービス株式会社</dd></div>
+                        <div><dt>会社名</dt><dd>GBTサービス</dd></div>
                         <div><dt>代表</dt><dd>加藤 峻二</dd></div>
-                        <div><dt>住所</dt><dd>〒444-0951 岡崎市北野町字一番訳5番地1</dd></div>
-                        <div><dt>営業時間</dt><dd>9:00～19:00  定休日：日曜 / 祝日</dd></div>
+                        <div><dt>住所</dt><dd>〒444-0951 <span class="text-newline">岡崎市北野町字一番訳5番地1</span></dd></div>
+                        <div><dt>営業時間</dt><dd>9:00～18:00  <span class="space">定休日：日曜 / 祝日</span></dd></div>
                         <div><dt>電話 / FAX</dt><dd>0564-31-7273 / 0564-34-3773</dd></div>
-                        <div><dt>事業案内</dt><dd>自動車販売、修理、車検、鈑金塗装、カスタムカー製作、カスタムカー販売、エアロ取付<br>全塗装、保険代理店、保険事故修理、軽鈑金修理、ナビ取付、電装品取付、ルームクリーニング</dd></div>
+                        <div><dt>事業内容</dt><dd>自動車販売、修理、車検、鈑金塗装、カスタムカー製作、カスタムカー販売、エアロ取付<br>全塗装、保険代理店、保険事故修理、軽鈑金修理、ナビ取付、電装品取付、ルームクリーニング</dd></div>
                     </dl>
                 </div>
             </section>
@@ -55,7 +74,7 @@ document.querySelector('#app').innerHTML = `
                     <div>
                         <div class="access-map"><img src=${aboutusMain}></div>
                         <div class="flex-container">
-                            <address class="access-address">〒444-0951 岡崎市北野町字一番訳5番地1</address>
+                            <address class="access-address">〒444-0951 <span class="text-newline">岡崎市北野町字一番訳5番地1</span></address>
                             <div class="access-link-container">
                                 <a class="access-link" href="">
                                 <p class="text">Google map</p>

@@ -1,8 +1,9 @@
 import '../src/style/css/ress.css'
 import '../src/style/css/style.css'
-import logo from '/logo.png';
+import logo from '/logo.svg';
 import insta from '/instagram.png';
 import hamburger from '/top/hamburger-button.png';
+import close from '/close-button.png';
 import mainvisual from '/top/main.jpg';
 import aboutus from '/top/aboutus.jpg';
 import service01 from '/top/service01.jpg';
@@ -32,17 +33,35 @@ document.querySelector('#app').innerHTML = `
         <li class="list-contact"><a href="">お問い合わせ</a></li>
         <li class="insta"><a href=""><img src=${insta} art="Instagramアイコン"></a></li>
       </nav>
-      <button class="hamburger">
-        <img src="${hamburger}" alt="ハンバーアイコン" />
+      <button class="hamburger-button" id="hamburger-button">
+        <img class="hamburger-icon" src="${hamburger}" alt="ハンバーガーメニュー" />
       </button>
     </header>
+    <div class="menu" id="hamburger-menu">
+      <div class="text-align-right">
+        <button class="close-button" id="close-button" >
+          <img class="close-icon" src="${close}" alt="閉じる" />
+        </button>
+      </div>
+      <div class="menu-list">
+        <ul>
+          <li><a href="">About us<span>私たちについて</span></a></li>
+          <li><a href="">Service<span>事業案内</span></a></li>
+          <li><a href="">Works<span>施工実績</span></a></li>
+          <li class="icon"><a href="">Stock List<span>在庫車両掲載サイト</span></a></li>
+          <li class="icon"><a href="">Feature<span>当社カスタム「バナナフィガロ」特集サイト</span></a></li>
+          <li class="icon-insta"><a href="">Instagram<span>インスタグラム</span></a></li>
+        </ul>
+        <img class="logo" src=${logo} alt="GTBサービスのロゴ" />
+      </div>
+    </div>
     <main>
       <div class="main-visual">
         <img src=${mainvisual} alt="メインビジュアル" />
         <div>
           <h1 id="textContainer" class="text-container">あなただけの<br>１台で、<br>カーライフを<br>もっと<br>楽しく。</h1>
           <h1 class="text-container-tablet">あなただけの１台で、<br>カーライフをもっと楽しく。</h1>
-          <p><span>Just For One</span>Enjoy Car Life!</p>
+          <p><span>Just For One </span>Enjoy Car Life!</p>
         </div>
       </div>
       <div class="bgc-beige">
@@ -51,7 +70,7 @@ document.querySelector('#app').innerHTML = `
             <div>
               <h2 class="section-title">About us</h2>
               <p class="section-subtitle">・私たちについて・</p>
-              <div class="kari">
+              <div class="about-us-img-tablet">
                 <img class="about-us-img-tab" src=${aboutus} alt="会社案内" />
               </div>
               <div class="about-us-text">
@@ -82,25 +101,25 @@ document.querySelector('#app').innerHTML = `
           <div class="card-container">
             <figure>
               <a href="">
-                <img src=${service01} alt="鈑金・塗装" />
+                <img class="card-img1" src=${service01} alt="鈑金・塗装" />
                 <figcaption>鈑金・塗装</figcaption>
               </a>
             </figure>
             <figure>
               <a href="">
-                <img src=${service02} alt="整備・車検" />
+                <img class="card-img2" src=${service02} alt="整備・車検" />
                 <figcaption>整備・車検</figcaption>
               </a>
             </figure>
             <figure>
               <a href="">
-                <img src=${service03} alt="新車・中古車販売" />
+                <img class="card-img3" src=${service03} alt="新車・中古車販売" />
                 <figcaption>新車・中古車販売</figcaption>
               </a>
             </figure>
             <figure>
               <a href="">
-                <img src=${service04} alt="カスタムペイント" />
+                <img class="card-img4" src=${service04} alt="カスタムペイント" />
                 <figcaption>カスタムペイント</figcaption>
               </a>
             </figure>
@@ -188,7 +207,7 @@ document.querySelector('#app').innerHTML = `
       <div class="bgc-white">
         <div class="insta-bg-top"></div>
         <section class="instagram">
-          <h2 class="section-title">Instagram</h2>
+          <h2 class="section-title-shadow" data-text="Instagram">Instagram</h2>
           <div class="instagram-link-container">
             <p class="instagram-link"><a href="">Follow us<span class="arrow"></span></a></p>
           </div>
