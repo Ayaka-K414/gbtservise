@@ -22,6 +22,7 @@
         }
         @include sp {
             padding: 67px 13px;
+            display: block;
         }
         div {
             padding-right: 40px;
@@ -68,6 +69,11 @@
                             box-shadow: 0px 2px 0px 0px #FEEF44;
                             margin-right: 20px;
                             padding: 22px 0 0 0;
+                            @include sp {
+                                font-size: 1.4rem;
+                                line-height: 20px;
+                                margin-right: 12px;
+                            }
                         }
                         .arrow {
                             display: inline-block;
@@ -78,7 +84,14 @@
                             text-align: center;
                             line-height: 60px;
                             font-size: 2rem;
-                            background-color: #F4F4F4;  
+                            background-color: #F4F4F4;
+                            @include sp {
+                                width: 48px;
+                                height: 48px;
+                                line-height: 46px;
+                                font-size: 1.6rem;
+                                padding: 0;
+                            } 
                         }
                     }
                     .about-us-link:hover .text {

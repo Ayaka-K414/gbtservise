@@ -5,6 +5,13 @@
 
 main {
     background-color: $color--lightblue;
+    padding-top: 173px;
+    @include tablet {
+        padding-top: 133px;
+    }
+    @include sp {
+        padding-top: 83px;
+    }    
     .works {
         width: 1168px;
         margin: 0 auto;

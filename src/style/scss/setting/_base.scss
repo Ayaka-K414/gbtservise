@@ -8,6 +8,10 @@ body {
     list-style: none;
 }
 
+body.is-active {
+    overflow: hidden;
+}
+
 ul {
     list-style: none;
 }

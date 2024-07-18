@@ -9,9 +9,10 @@
     font-weight: 700;
     line-height: 86px;
     padding-bottom: 24px;
+    letter-spacing: 0.03em;
     @include tablet {
         -webkit-text-stroke: 4px #000;
-        font-size: 7.0rem;
+        font-size: 7rem;
         line-height: 70px;
         padding-bottom: 8px;
     }

@@ -25,10 +25,6 @@ footer {
                     width: 310px;
                     height: 60px
                 }
-                @include sp {
-                    width: 360px;
-                    height: 60px;
-                }
                 a {
                     .list-title {
                         font-size: 2.2rem;
@@ -106,12 +102,14 @@ footer {
             justify-content: center;
         }
         .footer-flex-left {
+            text-align: center;
             .logo {
                 width: 290px;
-                height: 160px;
                 @include tablet {
                     width: 242px;
-                    height: 132px;
+                }
+                @include sp {
+                    width: 170px;
                 }
             }
             address {
@@ -122,6 +120,10 @@ footer {
                     line-height: 23px;
                     text-align: center;
                     padding: 25px 0;
+                    @include sp {
+                        font-size: 1.2rem;
+                        line-height: 20px;                                                
+                    }
                     span::before {
                         content: "";
                         display: inline-block;
@@ -131,6 +133,12 @@ footer {
                         background-size: contain;
                         vertical-align: middle;
                         margin-right: 4px;
+                        @include sp {
+                            width: 10px;
+                            height: 8px;
+                            margin-right: 2px;
+                            margin-bottom: 2px;
+                        }
                     }
                 }
             }
@@ -214,5 +222,11 @@ footer {
         color: $color--white;
         background-color: #000;
         text-align: center;
+        @include sp {
+            height: 32px;
+            font-size: 0.8rem;
+            line-height: 11px;
+            line-height: 32px;
+        }
     }
 }

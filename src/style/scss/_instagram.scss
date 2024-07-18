@@ -45,37 +45,38 @@
     .section-title-shadow {
         text-align: center;
         font-size: 10.0rem;
-        font-weight: 700;
+        font-weight: 900;
+        letter-spacing: 0.02em;
         line-height: 86px;
         position: relative;
         @include tablet {
             font-size: 7rem;
         }
         @include sp {
-            font-size: 4rem;
+            font-size: 4.2rem;
         }
     }
     .section-title-shadow::before {
         content: attr(data-text);
-            position: absolute;
-            top: 0;
-            color: $color--white;
-            -webkit-text-stroke: 3px black;
-            text-shadow: 4px 4px 2px $color--green; /* 緑のシャドウ */
-            font-size: inherit;
-            font-weight: inherit;
-            line-height: inherit;
-            padding: inherit;
-            @include tablet {
-                font-size: 7rem;
-                -webkit-text-stroke: 2px black;
-                text-shadow: 3px 3px 1px $color--green; /* 緑のシャドウ */    
-            }
-            @include sp {
-                font-size: 4rem;
-                -webkit-text-stroke: 2px black;
-                text-shadow: 3px 3px 1px $color--green; /* 緑のシャドウ */    
-            }
+        position: absolute;
+        top: 0;
+        color: $color--white;
+        -webkit-text-stroke: 3px black;
+        text-shadow: 4px 4px 2px $color--green; /* 緑のシャドウ */
+        font-size: inherit;
+        font-weight: inherit;
+        line-height: inherit;
+        padding: inherit;
+        @include tablet {
+            font-size: 7rem;
+            -webkit-text-stroke: 2px black;
+            text-shadow: 3px 3px 1px $color--green; /* 緑のシャドウ */    
+        }
+        @include sp {
+            font-size: 4.2rem;
+            -webkit-text-stroke: 2px black;
+            text-shadow: 3px 3px 1px $color--green; /* 緑のシャドウ */    
+        }
     }
     .instagram-link-container {
         display: flex;

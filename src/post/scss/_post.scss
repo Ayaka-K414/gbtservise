@@ -3,6 +3,16 @@
 @use '../../style/scss/component/section-title' as *;
 @use '../../style/scss/component/section-subtitle' as *;
 
+main {
+    padding-top: 173px;
+    @include tablet {
+        padding-top: 133px;
+    }
+    @include sp {
+        padding-top: 83px;
+    }
+}
+
 article {
     background-color: $color--white;
     padding-top: 70px;

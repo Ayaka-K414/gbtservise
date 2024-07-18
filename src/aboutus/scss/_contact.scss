@@ -20,7 +20,7 @@
     }
     @include sp {
         background-image: url("../../public/bg/contact/contact-high375.jpg");
-        height: 110px;
+        height: 200px;
     }
 }
 .contact-bg-bottom {
@@ -55,12 +55,41 @@
     @include tablet {
         margin-top: -120px;
     }
-    @include sp {
-        margin-top: -60px;
-    }
-    .section-title {
+    .section-title-shadow {
         text-align: center;
-        text-shadow: 2px 2px 0 #000,-2px 2px 0 #000,-2px -2px 0 #000,2px -2px 0 #000,5px 5px 0 $color--green;
+        font-size: 10.0rem;
+        font-weight: 900;
+        letter-spacing: 0.02em;
+        line-height: 86px;
+        position: relative;
+        @include tablet {
+            font-size: 7rem;
+        }
+        @include sp {
+            font-size: 4.2rem;
+        }
+    }
+    .section-title-shadow::before {
+        content: attr(data-text);
+        position: absolute;
+        top: 0;
+        color: $color--white;
+        -webkit-text-stroke: 3px black;
+        text-shadow: 4px 4px 2px $color--green; /* 緑のシャドウ */
+        font-size: inherit;
+        font-weight: inherit;
+        line-height: inherit;
+        padding: inherit;
+        @include tablet {
+            font-size: 7rem;
+            -webkit-text-stroke: 2px black;
+            text-shadow: 3px 3px 1px $color--green; /* 緑のシャドウ */    
+        }
+        @include sp {
+            font-size: 4.2rem;
+            -webkit-text-stroke: 2px black;
+            text-shadow: 3px 3px 1px $color--green; /* 緑のシャドウ */    
+        }
     }
     .section-subtitle {
         text-align: center;
@@ -117,4 +146,8 @@
             }
         }
     }
+}
+
+#href-contact {
+    scroll-margin-top: 380px;
 }

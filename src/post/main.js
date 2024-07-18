@@ -15,14 +15,14 @@ import post2304_07 from '/post/post2304_07.jpg';
 document.querySelector('#app').innerHTML = `
     <div>
         <header>
-            <a href="#"><img class="logo" src=${logo} alt="GTBサービスのロゴ" /></a>
+            <a href="/index.html"><img class="logo" src=${logo} alt="GTBサービスのロゴ" /></a>
             <nav>
-                <li><a href="">私たちについて</a></li>
-                <li><a href="">事業案内</a></li>
-                <li><a href="">アクセス</a></li>
-                <li><a href="">施工実績</a></li>
-                <li class="list-contact"><a href="">お問い合わせ</a></li>
-                <li class="insta"><a href=""><img src=${insta} art="Instagramアイコン"></a></li>
+                <li><a href="/aboutus/index.html">私たちについて</a></li>
+                <li><a href="/service/index.html">事業案内</a></li>
+                <li><a href="/aboutus/index.html#href-access">アクセス</a></li>
+                <li><a href="/works/index.html">施工実績</a></li>
+                <li class="list-contact"><a href="/aboutus/index.html#href-contact">お問い合わせ</a></li>
+                <li class="insta"><a href="https://www.instagram.com/gbtservise/" target="_blank" rel="noopener noreferrer"><img src=${insta} art="Instagramアイコン"></a></li>
             </nav>
             <button class="hamburger-button" id="hamburger-button">
                 <img class="hamburger-icon" src="${hamburger}" alt="ハンバーガーメニュー" />
@@ -31,19 +31,19 @@ document.querySelector('#app').innerHTML = `
         <div class="menu" id="hamburger-menu">
             <div class="text-align-right">
                 <button class="close-button" id="close-button" >
-                <img class="close-icon" src="${close}" alt="閉じる" />
+                    <img class="close-icon" src="${close}" alt="閉じる" />
                 </button>
             </div>
             <div class="menu-list">
                 <ul>
-                <li><a href="">About us<span>私たちについて</span></a></li>
-                <li><a href="">Service<span>事業案内</span></a></li>
-                <li><a href="">Works<span>施工実績</span></a></li>
-                <li class="icon"><a href="">Stock List<span>在庫車両掲載サイト</span></a></li>
-                <li class="icon"><a href="">Feature<span>当社カスタム「バナナフィガロ」特集サイト</span></a></li>
-                <li class="icon-insta"><a href="">Instagram<span>インスタグラム</span></a></li>
+                    <li><a href="/aboutus/index.html">About us<span>私たちについて</span></a></li>
+                    <li><a href="/service/index.html">Service<span>事業案内</span></a></li>
+                    <li><a href="/works/index.html">Works<span>施工実績</span></a></li>
+                    <li class="icon"><a href="https://www.carsensor.net/shop/aichi/319305001/#contents" target="_blank" rel="noopener noreferrer">Stock List<span>在庫車両掲載サイト</span></a></li>
+                    <li class="icon"><a href="https://www.automesseweb.jp/2021/12/22/862327" target="_blank" rel="noopener noreferrer">Feature<span>当社カスタム「バナナフィガロ」特集サイト</span></a></li>
+                    <li class="icon-insta"><a href="https://www.instagram.com/gbtservise/" target="_blank" rel="noopener noreferrer">Instagram<span>インスタグラム</span></a></li>
                 </ul>
-                <img class="logo" src=${logo} alt="GTBサービスのロゴ" />
+                <a href="/index.html"><img class="logo" src=${logo} alt="GTBサービスのロゴ" /></a>
             </div>
         </div>
         <main>
@@ -101,54 +101,54 @@ document.querySelector('#app').innerHTML = `
             </article>
         </main>
         <footer>
-            <div class="footer-high" id="white">
-            <ul class="footer-high-links">
+            <div class="footer-high">
+                <ul class="footer-high-links">
                 <li>
-                <a href="">
+                    <a href="https://www.carsensor.net/shop/aichi/319305001/#contents" target="_blank" rel="noopener noreferrer">
                     <p class="list-title">Stock List</p>
                     <p class="text">在庫車両をご覧になりたい方はこちら</p>
-                </a>
+                    </a>
                 </li>
                 <li>
-                <a href="">
+                    <a href="https://www.automesseweb.jp/2021/12/22/862327" target="_blank" rel="noopener noreferrer">
                     <p class="list-title">Feature</p>
                     <p class="text">「バナナフィガロ」の特集サイトへ</p>
-                </a>
+                    </a>
                 </li>
-            </ul>
+                </ul>
             </div>
             <div class="footer-low">
-            <div class="footer-flex-left">
-                <img class="logo" src=${logo} alt="GTBサービスのロゴ"/>
+                <div class="footer-flex-left">
+                <a href="/index.html"><img class="logo" src=${logo} alt="GTBサービスのロゴ"/></a>
                 <address>
-                <p class="address">〒444-0951<br>岡崎市北野町字一番訳5番地1<br><span class="tel-icon"></span>0564-31-7273</p>
+                    <p class="address">〒444-0951<br>岡崎市北野町字一番訳5番地1<br><span class="tel-icon"></span>0564-31-7273</p>
                 </address>
-            </div>
-            <div class="footer-flex-right">
+                </div>
+                <div class="footer-flex-right">
                 <ul class="footer-low-links">
-                <li>
-                    <a href="">私たちについて</a>
+                    <li>
+                    <a href="/aboutus/index.html">私たちについて</a>
                     <ul>
-                    <li class="under-pages-links"><a href="">会社案内</a></li>
-                    <li class="under-pages-links"><a href="">アクセス</a></li>
+                        <li class="under-pages-links"><a href="/aboutus/index.html">会社案内</a></li>
+                        <li class="under-pages-links"><a href="/aboutus/index.html#href-access">アクセス</a></li>
                     </ul>
-                </li>
-                <li>
-                    <a href="">事業案内</a>
+                    </li>
+                    <li>
+                    <a href="/service/index.html">事業案内</a>
                     <ul>
-                    <li class="under-pages-links"><a href="">鈑金・塗装</a></li>
-                    <li class="under-pages-links"><a href="">整備・車検</a></li>
-                    <li class="under-pages-links"><a href="">新車・中古車販売</a></li>
-                    <li class="under-pages-links"><a href="">カスタムペイント</a></li>
+                        <li class="under-pages-links"><a href="/service/index.html#href-repair">鈑金・塗装</a></li>
+                        <li class="under-pages-links"><a href="/service/index.html#href-maintenance">整備・車検</a></li>
+                        <li class="under-pages-links"><a href="/service/index.html#href-sale">新車・中古車販売</a></li>
+                        <li class="under-pages-links"><a href="/service/index.html#href-custom">カスタムペイント</a></li>
                     </ul>
-                </li>
-                <li><a href="">施工実績</a></li>
-                <li><a href="">お問い合わせ</a></li>
+                    </li>
+                    <li><a href="/works/index.html">施工実績</a></li>
+                    <li><a href="/aboutus/index.html#href-contact">お問い合わせ</a></li>
                 </ul>
                 <div class="instagram-link-container">
-                <p class="instagram-link"><a href="">Follow us<span class="arrow"></span></a></p>
+                    <p class="instagram-link"><a href="https://www.instagram.com/gbtservise/" target="_blank" rel="noopener noreferrer">Follow us<span class="arrow"></span></a></p>
                 </div>
-            </div>
+                </div>
             </div>
             <p class="copyright">&copy;2024 GBT service All Rights Reserved.</p>
         </footer>

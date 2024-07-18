@@ -37,8 +37,9 @@
                     height: 296px;
                 }
                 @include sp {
-                    width: 367px;
+                    width: 100%;
                     height: 154px;
+                    object-fit: cover;
                 }   
             }
         }
@@ -51,7 +52,7 @@
                 width: 704px;
             }
             @include sp {
-                width: 367px;
+                width: 100%;
             }
             .access-address {
                 font-size: 1.6rem;
@@ -121,4 +122,8 @@
             }    
         }
     }
+}
+
+#href-access {
+    scroll-margin-top: 220px;
 }

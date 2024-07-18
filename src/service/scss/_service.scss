@@ -4,6 +4,16 @@
 @use '../../style/scss/component/section-subtitle' as *;
 @use '../../style/scss/component/bgc' as *;
 
+main {
+    padding-top: 173px;
+    @include tablet {
+        padding-top: 133px;
+    }
+    @include sp {
+        padding-top: 83px;
+    }
+}
+
 .service {
     width: 1066px;
     margin: 0 auto;
@@ -15,7 +25,7 @@
         padding: 110px 32px 0;
     }
     @include sp {
-        padding: 0 12px;
+        padding: 50px 12px 0;
     }
     .service-container {
         display: flex;
@@ -52,6 +62,7 @@
                     height: 261px;
                     border-radius: 8px;
                     margin: 0 auto;
+                    object-fit: cover;
                 }
             }
             .service-text {
@@ -82,7 +93,6 @@
             object-fit: cover;
             border-radius: 20px;
             @include tablet {
-                // width: 400px;
                 height: 466px;
             }
             @include sp {
