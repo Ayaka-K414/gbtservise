@@ -94,14 +94,14 @@ document.querySelector('#app').innerHTML = `
                     </div>
                         <a class="list" href="">一覧へ戻る</a>
                     <div>
-                        <a class="next" href="">次のページ</a>
+                        <a class="next" href="">次の記事へ</a>
                         <a class="next-arrow" href=""></a>
                     </div>
                 </div>
             </article>
         </main>
         <footer>
-            <div class="footer-high">
+            <div class="footer-high bg-white">
                 <ul class="footer-high-links">
                 <li>
                     <a href="https://www.carsensor.net/shop/aichi/319305001/#contents" target="_blank" rel="noopener noreferrer">

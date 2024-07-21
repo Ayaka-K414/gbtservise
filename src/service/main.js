@@ -141,7 +141,7 @@ document.querySelector('#app').innerHTML = `
                             <h4>カスタムペイント</h4>
                             <figure>
                                 <div class="flex-img">
-                                    <img class="obj-position-left" src=${custom01} alt="鈑金・塗装" />
+                                    <img class="obj-position-right" src=${custom01} alt="鈑金・塗装" />
                                     <div class="img-small">
                                         <img src=${custom02} alt="鈑金・塗装" />
                                         <img src=${custom03} alt="鈑金・塗装" />

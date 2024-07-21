@@ -148,6 +148,7 @@ header .hamburger-button {
 
 @media screen and (max-width: 1024px) {
   .menu.is-active {
+    overflow-y: scroll;
     position: relative;
     z-index: 10;
     display: block;
@@ -172,7 +173,7 @@ header .hamburger-button {
     letter-spacing: 0.01em;
     text-align: left;
     padding: 18px 0;
-    border-bottom: 1px solid #A2A2A2;
+    border-bottom: 1px solid #a2a2a2;
   }
   .menu.is-active .menu-list ul li a span {
     display: block;
@@ -877,7 +878,7 @@ main {
   font-size: 1.6rem;
   line-height: 23px;
   text-align: center;
-  box-shadow: 0px 2px 0px 0px #FEEF44;
+  box-shadow: 0px 2px 0px 0px #feef44;
   margin-right: 20px;
   padding: 22px 0 0 0;
 }
@@ -890,7 +891,7 @@ main {
   text-align: center;
   line-height: 60px;
   font-size: 2rem;
-  background-color: #F4F4F4;
+  background-color: #f4f4f4;
 }
 .works .flex-container .works-link-container .works-link:hover .text {
   text-shadow: 2px 2px #FEEF44;
@@ -1078,7 +1079,7 @@ main {
   font-size: 1.6rem;
   line-height: 23px;
   text-align: center;
-  box-shadow: 0px 2px 0px 0px #FEEF44;
+  box-shadow: 0px 2px 0px 0px #feef44;
   margin-right: 20px;
   padding: 22px 0 0 0;
 }
@@ -1098,6 +1099,7 @@ main {
   text-align: center;
   line-height: 60px;
   font-size: 2rem;
+  background-color: #f4f4f4;
 }
 @media screen and (max-width: 768px) {
   .works-link-container-tablet .works-link-tablet .arrow {
@@ -1107,6 +1109,16 @@ main {
     font-size: 1.6rem;
     padding: 0;
   }
+}
+.works-link-container-tablet .works-link-tablet:hover .text {
+  text-shadow: 2px 2px #FEEF44;
+  border-bottom: 1px solid #000;
+  transition: all 0.3s ease-out;
+}
+.works-link-container-tablet .works-link-tablet:hover .arrow {
+  border: 1px solid #000;
+  background-color: #FEEF44;
+  transition: all 0.3s ease-out;
 }
 
 .insta-bg-top {
@@ -1541,7 +1553,7 @@ footer .footer-low .instagram-link-container .instagram-link {
   font-weight: 700;
   line-height: 23px;
   text-align: left;
-  border-bottom: 3px solid #FEEF44;
+  border-bottom: 3px solid #feef44;
 }
 footer .footer-low .instagram-link-container .instagram-link:hover {
   border-bottom: 1px solid #000;
@@ -1585,6 +1597,10 @@ footer .copyright {
     line-height: 11px;
     line-height: 32px;
   }
+}
+
+footer > .bg-white {
+  background-color: #FFFFFF;
 }
 
 .section-title {

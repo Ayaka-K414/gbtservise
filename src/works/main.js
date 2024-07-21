@@ -1,25 +1,23 @@
-import '../style/css/ress.css';
-import '../style/css/works.css';
-import logo from '../public/logo.svg';
-import insta from '../public/instagram.png';
-import hamburger from '../public/top/hamburger-button.png';
-import close from '/close-button.png';
-import archive01 from '../public/works/archive01.jpg';
-import archive02 from '../public/works/archive02.jpg';
-import archive03 from '../public/works/archive03.jpg';
-import archive04 from '../public/works/archive04.jpg';
-import archive05 from '../public/works/archive05.jpg';
-import archive06 from '../public/works/archive06.jpg';
-import archive07 from '../public/works/archive07.jpg';
-import archive08 from '../public/works/archive08.jpg';
-import archive09 from '../public/works/archive09.jpg';
-import archive10 from '../public/works/archive10.jpg';
-import archive11 from '../public/works/archive11.jpg';
-import archive12 from '../public/works/archive12.jpg';
+import "../style/css/ress.css";
+import "../style/css/works.css";
+import logo from "../public/logo.svg";
+import insta from "../public/instagram.png";
+import hamburger from "../public/top/hamburger-button.png";
+import close from "/close-button.png";
+import archive01 from "../public/works/archive01.jpg";
+import archive02 from "../public/works/archive02.jpg";
+import archive03 from "../public/works/archive03.jpg";
+import archive04 from "../public/works/archive04.jpg";
+import archive05 from "../public/works/archive05.jpg";
+import archive06 from "../public/works/archive06.jpg";
+import archive07 from "../public/works/archive07.jpg";
+import archive08 from "../public/works/archive08.jpg";
+import archive09 from "../public/works/archive09.jpg";
+import archive10 from "../public/works/archive10.jpg";
+import archive11 from "../public/works/archive11.jpg";
+import archive12 from "../public/works/archive12.jpg";
 
-
-
-document.querySelector('#app').innerHTML = `
+document.querySelector("#app").innerHTML = `
     <div>
         <header>
             <a href="/index.html"><img class="logo" src=${logo} alt="GTBサービスのロゴ" /></a>
@@ -60,110 +58,110 @@ document.querySelector('#app').innerHTML = `
                 <div class="card-container">
                     <figure>
                         <a href="/post/index.html">
-                        <img src=${archive01} alt="鈑金・塗装" />
-                        <figcaption>
-                            <p class="card-title">カスタムペイント</p>
-                            <p class="card-text">ミラジーノのカスタムペイント</p>
-                        </figcaption>
+                            <img src=${archive01} alt="鈑金・塗装" />
+                            <figcaption>
+                                <p class="card-title">カスタムペイント</p>
+                                <p class="card-text">ミラジーノのカスタムペイント</p>
+                            </figcaption>
                         </a>
                     </figure>
                     <figure>
                         <a href="">
-                        <img src=${archive02} alt="整備・車検" />
-                        <figcaption>
-                            <p class="card-title">オールペン</p>
-                            <p class="card-text">ジムニーのオールペン</p>
-                        </figcaption>
+                            <img src=${archive02} alt="整備・車検" />
+                            <figcaption>
+                                <p class="card-title">オールペン</p>
+                                <p class="card-text">ジムニーのオールペン</p>
+                            </figcaption>
                         </a>
                     </figure>
                     <figure>
                         <a href="">
-                        <img src=${archive03} alt="新車・中古車販売" />
-                        <figcaption>
-                            <p class="card-title">カスタムペイント</p>
-                            <p class="card-text">グラインダーペイント</p>
-                        </figcaption>
+                            <img src=${archive03} alt="新車・中古車販売" />
+                            <figcaption>
+                                <p class="card-title">カスタムペイント</p>
+                                <p class="card-text">グラインダーペイント</p>
+                            </figcaption>
                         </a>
                     </figure>
                     <figure>
                         <a href="">
-                        <img src=${archive04} alt="カスタムペイント" />
-                        <figcaption>
-                            <p class="card-title">フルカスタム</p>
-                            <p class="card-text">ネイキッドのフルカスタム</p>
-                        </figcaption>
+                            <img src=${archive04} alt="カスタムペイント" />
+                            <figcaption>
+                                <p class="card-title">フルカスタム</p>
+                                <p class="card-text">ネイキッドのフルカスタム</p>
+                            </figcaption>
                         </a>
                     </figure>
                     <figure>
                         <a href="">
-                        <img src=${archive05} alt="カスタムペイント" />
-                        <figcaption>
-                            <p class="card-title">オールペン</p>
-                            <p class="card-text">ミラジーノのオールペン</p>
-                        </figcaption>
+                            <img src=${archive05} alt="カスタムペイント" />
+                            <figcaption>
+                                <p class="card-title">オールペン</p>
+                                <p class="card-text">ミラジーノのオールペン</p>
+                            </figcaption>
                         </a>
                     </figure>
                     <figure>
                         <a href="">
-                        <img src=${archive06} alt="カスタムペイント" />
-                        <figcaption>
-                            <p class="card-title">オールペン</p>
-                            <p class="card-text">ハイエースのオールペン</p>
-                        </figcaption>
+                            <img src=${archive06} alt="カスタムペイント" />
+                            <figcaption>
+                                <p class="card-title">オールペン</p>
+                                <p class="card-text">ハイエースのオールペン</p>
+                            </figcaption>
                         </a>
                     </figure>
                     <figure>
                         <a href="">
-                        <img src=${archive07} alt="カスタムペイント" />
-                        <figcaption>
-                            <p class="card-title">カスタムペイント</p>
-                            <p class="card-text">ベルエアのラップペイント</p>
-                        </figcaption>
+                            <img src=${archive07} alt="カスタムペイント" />
+                            <figcaption>
+                                <p class="card-title">カスタムペイント</p>
+                                <p class="card-text">ベルエアのラップペイント</p>
+                            </figcaption>
                         </a>
                     </figure>
                     <figure>
                         <a href="">
-                        <img src=${archive08} alt="カスタムペイント" />
-                        <figcaption>
-                            <p class="card-title">鈑金・塗装</p>
-                            <p class="card-text">アウディA7の側面キズ、凹み修理</p>
-                        </figcaption>
+                            <img src=${archive08} alt="カスタムペイント" />
+                            <figcaption>
+                                <p class="card-title">鈑金・塗装</p>
+                                <p class="card-text">アウディA7の側面キズ、凹み修理</p>
+                            </figcaption>
                         </a>
                     </figure>
                     <figure>
                         <a href="">
-                        <img src=${archive09} alt="カスタムペイント" />
-                        <figcaption>
-                            <p class="card-title">カスタムペイント</p>
-                            <p class="card-text">バイクヘルメットのペイント</p>
-                        </figcaption>
+                            <img src=${archive09} alt="カスタムペイント" />
+                            <figcaption>
+                                <p class="card-title">カスタムペイント</p>
+                                <p class="card-text">バイクヘルメットのペイント</p>
+                            </figcaption>
                         </a>
                     </figure>
                     <figure>
                         <a href="">
-                        <img src=${archive10} alt="カスタムペイント" />
-                        <figcaption>
-                            <p class="card-title">カスタムペイント</p>
-                            <p class="card-text">マスタングのカスタムペイント</p>
-                        </figcaption>
+                            <img src=${archive10} alt="カスタムペイント" />
+                            <figcaption>
+                                <p class="card-title">カスタムペイント</p>
+                                <p class="card-text">マスタングのカスタムペイント</p>
+                            </figcaption>
                         </a>
                     </figure>
                     <figure>
                         <a href="">
-                        <img src=${archive11} alt="カスタムペイント" />
-                        <figcaption>
-                            <p class="card-title">レストア</p>
-                            <p class="card-text">ホンダN360のレストア</p>
-                        </figcaption>
+                            <img src=${archive11} alt="カスタムペイント" />
+                            <figcaption>
+                                <p class="card-title">レストア</p>
+                                <p class="card-text">ホンダN360のレストア</p>
+                            </figcaption>
                         </a>
                     </figure>
                     <figure>
                         <a href="">
-                        <img src=${archive12} alt="カスタムペイント" />
-                        <figcaption>
-                            <p class="card-title">カスタムペイント</p>
-                            <p class="card-text">ハーレーのカスタムペイント</p>
-                        </figcaption>
+                            <img src=${archive12} alt="カスタムペイント" />
+                            <figcaption>
+                                <p class="card-title">カスタムペイント</p>
+                                <p class="card-text">ハーレーのカスタムペイント</p>
+                            </figcaption>
                         </a>
                     </figure>
                 </div>

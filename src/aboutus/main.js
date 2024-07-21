@@ -103,7 +103,7 @@ document.querySelector('#app').innerHTML = `
             </div>
         </main>
         <footer>
-            <div class="footer-high">
+            <div class="footer-high bg-white">
                 <ul class="footer-high-links">
                 <li>
                     <a href="https://www.carsensor.net/shop/aichi/319305001/#contents" target="_blank" rel="noopener noreferrer">

@@ -1,21 +1,21 @@
 // ベーススタイリング
-@use 'scss/setting/base';
+@use "scss/setting/base";
 
 // ブレイクポイント（mixin）とカラー変数（variable）
-@use 'scss/setting/mixin';
-@use 'scss/setting/variable';
+@use "scss/setting/mixin";
+@use "scss/setting/variable";
 
 // セクションスタイリング
-@use 'scss/header';
-@use 'scss/main-visual';
-@use 'scss/about-us';
-@use 'scss/service';
-@use 'scss/works';
-@use 'scss/instagram';
-@use 'scss/footer';
+@use "scss/header";
+@use "scss/main-visual";
+@use "scss/about-us";
+@use "scss/service";
+@use "scss/works";
+@use "scss/instagram";
+@use "scss/footer";
 
 // コンポーネント
-@use 'scss/component/section-title';
-@use 'scss/component/section-subtitle';
-@use 'scss/component/bgc';
-@use 'scss/component/mg';
+@use "scss/component/section-title";
+@use "scss/component/section-subtitle";
+@use "scss/component/bgc";
+@use "scss/component/mg";

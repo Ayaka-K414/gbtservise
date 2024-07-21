@@ -147,6 +147,7 @@ header .hamburger-button {
 
 @media screen and (max-width: 1024px) {
   .menu.is-active {
+    overflow-y: scroll;
     position: relative;
     z-index: 10;
     display: block;
@@ -171,7 +172,7 @@ header .hamburger-button {
     letter-spacing: 0.01em;
     text-align: left;
     padding: 18px 0;
-    border-bottom: 1px solid #A2A2A2;
+    border-bottom: 1px solid #a2a2a2;
   }
   .menu.is-active .menu-list ul li a span {
     display: block;
@@ -842,6 +843,10 @@ article .article-container .title-flex .service-content figure .flex-img img {
 article .article-container .title-flex .service-content figure .flex-img .obj-position-left {
   -o-object-position: left;
      object-position: left;
+}
+article .article-container .title-flex .service-content figure .flex-img .obj-position-right {
+  -o-object-position: 72%;
+     object-position: 72%;
 }
 article .article-container .title-flex .service-content figure .flex-img .img-small {
   display: flex;

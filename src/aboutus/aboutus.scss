@@ -1,14 +1,14 @@
 // ベーススタイリング
-@use '../style/scss/setting/base';
+@use "../style/scss/setting/base";
 
 // ブレイクポイント（mixin）とカラー変数（variable）
-@use '../style/scss/setting/mixin';
-@use '../style/scss/setting/variable';
+@use "../style/scss/setting/mixin";
+@use "../style/scss/setting/variable";
 
 // セクションスタイリング
-@use '../style/scss/header';
-@use '../style/scss/footer';
-@use 'scss/about-us';
-@use 'scss/company';
-@use 'scss/access';
-@use 'scss/contact';
+@use "../style/scss/header";
+@use "../style/scss/footer";
+@use "scss/about-us";
+@use "scss/company";
+@use "scss/access";
+@use "scss/contact";
