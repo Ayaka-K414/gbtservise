@@ -484,6 +484,13 @@ footer .copyright {
 
 footer > .bg-white {
   background-color: #FFFFFF;
+  border-bottom: 1px solid #000;
+}
+
+@media screen and (max-width: 1024px) {
+  footer > .bg-beige {
+    background-color: #FAF2EB;
+  }
 }
 
 .section-title {

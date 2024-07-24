@@ -487,6 +487,12 @@ footer > .bg-white {
   background-color: #FFFFFF;
 }
 
+@media screen and (max-width: 1024px) {
+  footer > .bg-beige {
+    background-color: #FAF2EB;
+  }
+}
+
 .section-title {
   color: #fff;
   -webkit-text-stroke: 7px #000;

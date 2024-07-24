@@ -1603,6 +1603,10 @@ footer > .bg-white {
   background-color: #FFFFFF;
 }
 
+footer > .bg-beige {
+  background-color: #FAF2EB;
+}
+
 .section-title {
   color: #fff;
   -webkit-text-stroke: 7px #000;

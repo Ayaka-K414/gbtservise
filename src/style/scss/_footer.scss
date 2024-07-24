@@ -233,4 +233,11 @@ footer {
 
 footer > .bg-white {
   background-color: $color--white;
+  border-bottom: 1px solid #000;
+}
+
+footer > .bg-beige {
+  @include tablet {
+    background-color: $color--beige;
+  }
 }
